@@ -1,6 +1,7 @@
-# spreadsheet
+# Per testare l'app eseguire i seguenti comandi dal terminale
 
-Insert the purpose of this project and some interesting infos here
+npm install
+npm start
 
 ## Credits
 

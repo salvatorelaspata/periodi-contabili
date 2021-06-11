@@ -1,7 +1,8 @@
 # Per testare l'app eseguire i seguenti comandi dal terminale
 
-npm install
-npm start
+### npm install
+
+### npm start
 
 ## Credits
 

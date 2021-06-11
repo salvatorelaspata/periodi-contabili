@@ -39,7 +39,8 @@
       "libs": {
         "sap.ui.core": {},
         "sap.m": {},
-        "sap.ui.layout": {}
+        "sap.ui.layout": {},
+        "sap.ui.export": {}
       }
     },
     "contentDensities": {
@@ -52,6 +53,22 @@
         "settings": {
           "bundleName": "com.myorg.spreadsheet.i18n.i18n"
         }
+      },
+      "dataSource": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/dataSource.json"
+      },
+      "TreeTable": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/listRegisterTreeTable.json"
+      },
+      "TotaleQuantita1": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/totaleQuantitaDIVA04022021.json"
+      },
+      "TotaleQuantita2": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/totaleQuantitaDIVA31122020.json"
       }
     },
     "resources": {

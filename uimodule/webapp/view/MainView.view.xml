@@ -1,12 +1,144 @@
- <mvc:View controllerName="com.myorg.spreadsheet.controller.MainView"
-  displayBlock="true"
-  xmlns="sap.m"
-  xmlns:mvc="sap.ui.core.mvc">
-  <App id="idAppControl" >
-    <pages>
-      <Page title="{i18n>title}">
-        <content></content>
-      </Page>
-    </pages>
-  </App>
+<mvc:View controllerName="com.myorg.spreadsheet.controller.MainView" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:table="sap.ui.table">
+    <App id="idAppControl">
+        <pages>
+            <Page title="{i18n>title}">
+                <content>
+                    <VBox>
+                        <Panel headerText="Tree Table" expandable="true" expanded="false">
+                            <table:TreeTable rows="{TreeTable>/RegisterCollection}">
+                                <table:extension>
+                                    <OverflowToolbar>
+                                        <Title id="title" text="Sample Data"></Title>
+                                        <ToolbarSpacer />
+                                        <Button icon="sap-icon://excel-attachment" press="onExport" tooltip="Export Formatting Example" />
+                                    </OverflowToolbar>
+                                </table:extension>
+                                <table:columns>
+                                    <table:Column>
+                                        <Label text="nro" />
+                                        <table:template>
+                                            <Text text="{TreeTable>nro}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="date" />
+                                        <table:template>
+                                            <Text text="{TreeTable>date}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="pieces" />
+                                        <table:template>
+                                            <Text text="{TreeTable>pieces}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="grossWeight" />
+                                        <table:template>
+                                            <Text text="{TreeTable>grossWeight}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="netWeight" />
+                                        <table:template>
+                                            <Text text="{TreeTable>netWeight}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="doganeItem" />
+                                        <table:template>
+                                            <Text text="{TreeTable>doganeItem}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="doganePosition" />
+                                        <table:template>
+                                            <Text text="{TreeTable>doganePosition}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="valueCurrency" />
+                                        <table:template>
+                                            <Text text="{TreeTable>valueCurrency}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="origin" />
+                                        <table:template>
+                                            <Text text="{TreeTable>origin}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="originPref" />
+                                        <table:template>
+                                            <Text text="{TreeTable>originPref}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="originNotPref" />
+                                        <table:template>
+                                            <Text text="{TreeTable>originNotPref}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="transDocIntroIM7" />
+                                        <table:template>
+                                            <Text text="{TreeTable>transDocIntroIM7}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="transDocExtcnIM4" />
+                                        <table:template>
+                                            <Text text="{TreeTable>transDocExtcnIM4}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="subjectCode" />
+                                        <table:template>
+                                            <Text text="{TreeTable>subjectCode}" />
+                                        </table:template>
+                                    </table:Column>
+                                    <table:Column>
+                                        <Label text="stockDocument" />
+                                        <table:template>
+                                            <Text text="{TreeTable>stockDocument}" />
+                                        </table:template>
+                                    </table:Column>
+                                </table:columns>
+                            </table:TreeTable>
+                        </Panel>
+                        <Panel headerText="Periodi Contabili" expandable="true" expanded="true">
+                            <VBox>
+                                <VBox id="container-periodi-contabili">
+                                    <items></items>
+                                </VBox>
+                                <Table items="{totalPeriodiContabili>/}">
+                                    <columns>
+                                        <Column />
+                                        <Column />
+                                        <Column />
+                                        <Column />
+                                        <Column />
+                                        <Column />
+                                    </columns>
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="" />
+                                                <Text text="" />
+                                                <Text text="{totalPeriodiContabili>label}" />
+                                                <Text text="{totalPeriodiContabili>totale}" />
+                                                <Text text="{totalPeriodiContabili>materiale}" />
+                                                <Text text="" />
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
+                                </Table>
+                            </VBox>
+                        </Panel>
+                    </VBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>

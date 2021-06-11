@@ -1,0 +1,24 @@
+{
+	"doganeItem": [{
+		"subjectCode": "1",
+		"doganeItem": "8703311000",
+		"pieces": "-",
+		"grossWeight": "-",
+		"netWeight": "-",
+		"value": "-"
+	}, {
+		"subjectCode": "2",
+		"doganeItem": "8703311000",
+		"pieces": "5",
+		"grossWeight": "50.000",
+		"netWeight": "50.000",
+		"value": "30.000"
+	}, {
+		"subjectCode": "",
+		"doganeItem": "Sub-totale",
+		"pieces": "5",
+		"grossWeight": "",
+		"netWeight": "",
+		"value": ""
+	}]
+}

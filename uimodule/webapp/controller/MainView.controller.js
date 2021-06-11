@@ -120,6 +120,12 @@ sap.ui.define(
         for (const [year, array] of Object.entries(periodiContabili)) {
           const oModel = new sap.ui.model.json.JSONModel(array);
           const oTable = self._createTable(oModel);
+          debugger;
+          const length = oTable.getItems().length;
+          const lastRows = oTable.getItems()[length - 1];
+          lastRows.getCells().map((cel) => {
+            cel.addStyleClass(`bold`);
+          });
           // inserisco una riga per il subTotale
           container.push(oTable);
         }

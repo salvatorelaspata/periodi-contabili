@@ -1,1 +1,4 @@
 /* Enter your custom styles here */
+.bold {
+  font-weight: bold !important;
+}

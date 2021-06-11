@@ -126,9 +126,9 @@
                                             <cells>
                                                 <Text text="" />
                                                 <Text text="" />
-                                                <Text text="{totalPeriodiContabili>label}" />
-                                                <Text text="{totalPeriodiContabili>totale}" />
-                                                <Text text="{totalPeriodiContabili>materiale}" />
+                                                <Text class="" text="{totalPeriodiContabili>label}" />
+                                                <Text class="bold" text="{totalPeriodiContabili>totale}" />
+                                                <Text class="bold" text="{totalPeriodiContabili>materiale}" />
                                                 <Text text="" />
                                             </cells>
                                         </ColumnListItem>

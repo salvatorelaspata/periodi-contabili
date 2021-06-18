@@ -1,0 +1,24 @@
+{
+	"NaturaTransazioneBCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "1",
+			"text": "Merci fornite nel quadro di programmi di aiuto totalmente o parzialmente finanziati dalla Comunità Europea"
+		},
+		{
+			"key": "2",
+			"text": "Altri aiuti pubblici"
+		},
+		{
+			"key": "3",
+			"text": "Altri aiuti"
+		},
+		{
+			"key": "4",
+			"text": "Altro"
+		}
+	]
+}

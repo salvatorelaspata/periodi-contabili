@@ -1,0 +1,44 @@
+{
+	"NaturaTransazioneACollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "1",
+			"text": "Transazioni che comportano un trasferimento effettivo o previsto di proprietà contro compensazione"
+		},
+		{
+			"key": "2",
+			"text": "Rispedizione di merci dopo la registrazione della transazione originaria sotto il codice 1"
+		},
+		{
+			"key": "3",
+			"text": "Transazioni che comportano un trasferimento di proprietà senza compensazione"
+		},
+		{
+			"key": "4",
+			"text": "Operazioni in vista di una lavorazione per conto terzi o di una riparazione"
+		},
+		{
+			"key": "5",
+			"text": "Operazioni successive ad una lavorazione per conto terzi o ad una riparazione"
+		},
+		{
+			"key": "6",
+			"text": "Transazioni senza trasferimento di proprietà, quali locazione, prestito, leasing operativo ed altri usi temporanei, ad eccezione delle lavorazioni per conto terzi e delle riparazioni"
+		},
+		{
+			"key": "7",
+			"text": "Operazioni nel quadro di programmi di difesa comuni o di altri programmi intergovernativi di produzione coordinata"
+		},
+		{
+			"key": "8",
+			"text": "Fornitura di materiali e attrezzature nel quadro di lavori di costruzione o di installazione facenti parte di un contratto generale"
+		},
+		{
+			"key": "9",
+			"text": "Altre transazioni"
+		}
+	]
+}

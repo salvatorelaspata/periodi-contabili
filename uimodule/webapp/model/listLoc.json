@@ -1,0 +1,16 @@
+{
+	"LocalizzazioniCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "D",
+			"text": "Spazio Doganale"
+		},
+		{
+			"key": "F",
+			"text": "Spazio NON Doganale"
+		}
+	]
+}

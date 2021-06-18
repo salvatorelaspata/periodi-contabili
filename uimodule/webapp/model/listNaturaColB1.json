@@ -1,0 +1,28 @@
+{
+	"NaturaTransazioneBCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "1",
+			"text": "Acquisto/vendita definitivo/a"
+		},
+		{
+			"key": "2",
+			"text": "Spedizione per vendita in visione o in prova, spedizione con diritto di restituzione e in conto deposito"
+		},
+		{
+			"key": "3",
+			"text": "Operazioni di compensazione"
+		},
+		{
+			"key": "4",
+			"text": "Acquisti personali di viaggiatori"
+		},
+		{
+			"key": "5",
+			"text": "Leasing finanziario"
+		}
+	]
+}

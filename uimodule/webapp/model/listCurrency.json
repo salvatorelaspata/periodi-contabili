@@ -1,0 +1,20 @@
+{
+	"CurrencyCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "EUR",
+			"text": "Euro"
+		},
+		{
+			"key": "USD",
+			"text": "Dollaro"
+		},
+		{
+			"key": "CLP",
+			"text": "Peso Cileno"
+		}
+	]
+}

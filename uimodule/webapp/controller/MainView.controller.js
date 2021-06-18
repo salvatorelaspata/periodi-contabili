@@ -1,11 +1,31 @@
 sap.ui.define(
-  ["com/myorg/spreadsheet/controller/BaseController", "./exportXLSX"],
-  function (BaseController, exportXLSX) {
+  [
+    "com/myorg/spreadsheet/controller/BaseController",
+    "./exportXLSX",
+    "./generateTxt",
+  ],
+  function (BaseController, exportXLSX, generateTxt) {
     "use strict";
     return BaseController.extend("com.myorg.spreadsheet.controller.MainView", {
+      onPressHelp: function () {
+        const txtHeader = this.getOwnerComponent()
+          .getModel("txtHeader")
+          .getData();
+        const txtPosizioni = this.getOwnerComponent()
+          .getModel("txtPosizioni")
+          .getData();
+        generateTxt.createIM(null, txtHeader, txtPosizioni);
+      },
       onInit: function () {
         const oView = this.getView();
-
+        /** TXT - Start */
+        // const emptyModel = new sap.ui.model.json.JSONModel();
+        // prepopolo i valori del form
+        const txtHeader = this.getOwnerComponent().getModel("txtHeader");
+        const txtPosizioni = this.getOwnerComponent().getModel("txtPosizioni");
+        oView.setModel(txtHeader, "DauHeader");
+        oView.setModel(txtPosizioni, "DauSingleItemModel");
+        /** TXT - End */
         const oModel = this.getOwnerComponent().getModel("TreeTable");
         oView.setModel(oModel, "TreeTable");
         const periodiContabili = this._parsePeriodiContabili(oModel.getData());
@@ -120,7 +140,7 @@ sap.ui.define(
         for (const [year, array] of Object.entries(periodiContabili)) {
           const oModel = new sap.ui.model.json.JSONModel(array);
           const oTable = self._createTable(oModel);
-          debugger;
+
           const length = oTable.getItems().length;
           const lastRows = oTable.getItems()[length - 1];
           lastRows.getCells().map((cel) => {

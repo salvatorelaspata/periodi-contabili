@@ -1,0 +1,20 @@
+{
+	"NaturaTransazioneBCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "1",
+			"text": "Rispedizione di merci"
+		},
+		{
+			"key": "2",
+			"text": "Sostituzione di merci rispedite"
+		},
+		{
+			"key": "3",
+			"text": "Sostituzione di merci non rispedite"
+		}
+	]
+}

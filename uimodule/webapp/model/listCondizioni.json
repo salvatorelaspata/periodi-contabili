@@ -1,0 +1,20 @@
+{
+	"CondizioniCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "1",
+			"text": "Territorio Doganale Italiano"
+		},
+		{
+			"key": "2",
+			"text": "Stato membro Comunità Europea"
+		},
+		{
+			"key": "3",
+			"text": "Stato fuori Comunità Europea"
+		}
+	]
+}

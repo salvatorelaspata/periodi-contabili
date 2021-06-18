@@ -1,0 +1,112 @@
+{
+	"VinCollection":[
+		{
+			"materialCode": "00000000000000001",
+			"materialDescription": "Ferrari",
+			"shipmentNumber": "0000000001",
+			"forwardingAgent": "BRT",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000002",
+			"materialDescription": "Lamborghini",
+			"shipmentNumber": "0000000001",
+			"forwardingAgent": "BRT",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000003",
+			"materialDescription": "Fiat Panda",
+			"shipmentNumber": "0000000001",
+			"forwardingAgent": "BRT",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000004",
+			"materialDescription": "Audi A1",
+			"shipmentNumber": "0000000001",
+			"forwardingAgent": "SDA",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000005",
+			"materialDescription": "Volkswagen Golf",
+			"shipmentNumber": "0000000001",
+			"forwardingAgent": "SDA",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000006",
+			"materialDescription": "Renault Clio",
+			"shipmentNumber": "0000000001",
+			"forwardingAgent": "SDA",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000007",
+			"materialDescription": "Kia",
+			"shipmentNumber": "0000000002",
+			"forwardingAgent": "FDX",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000008",
+			"materialDescription": "Ford Fiesta",
+			"shipmentNumber": "0000000002",
+			"forwardingAgent": "FDX",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000009",
+			"materialDescription": "Opel Corsa",
+			"shipmentNumber": "0000000002",
+			"forwardingAgent": "FDX",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000010",
+			"materialDescription": "Fiat 500",
+			"shipmentNumber": "0000000002",
+			"forwardingAgent": "GLS",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000011",
+			"materialDescription": "Maserati",
+			"shipmentNumber": "0000000002",
+			"forwardingAgent": "GLS",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		},
+		{
+			"materialCode": "00000000000000012",
+			"materialDescription": "Tesla Model X",
+			"shipmentNumber": "0000000002",
+			"forwardingAgent": "GLS",
+			"datetime": 1614342039584,
+			"division": "ITJ0",
+			"materialType": "ZMOB"
+		}
+	]
+}

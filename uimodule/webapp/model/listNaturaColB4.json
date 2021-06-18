@@ -1,0 +1,20 @@
+{
+	"NaturaTransazioneBCollection":[
+		{
+			"key": "",
+			"text": ""
+		},
+		{	
+			"key": "1",
+			"text": "Lavorazione per conto terzi"
+		},
+		{
+			"key": "2",
+			"text": "Riparazione e manutenzione a titolo oneroso"
+		},
+		{
+			"key": "3",
+			"text": "Riparazione e manutenzione a titolo gratuito"
+		}
+	]
+}

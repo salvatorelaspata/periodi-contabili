@@ -3,6 +3,7 @@ sap.ui.define(["./generateTxt"], function () {
 
   return {
     createIM: function (txtHeader, txtTestata, txtPosizioni) {
+      console.log(txtHeader, txtTestata, txtPosizioni);
       //   this._parseModelToText(txtHeader, txtPosizioni);
       this._downloadToFile(
         this._parseModelToText(txtHeader, txtTestata, txtPosizioni),
@@ -35,8 +36,8 @@ sap.ui.define(["./generateTxt"], function () {
         txtPosizioni.length.toString()
       );
 
-      txtPosizioni.unshift(txtTestata);
-      const details = this._createDetailRows(txtPosizioni);
+      const up = [txtTestata].concat(txtPosizioni);
+      const details = this._createDetailRows(up);
       //  const details = this._createDetailRows([{}, {}]);
 
       return `${headerRor}\n${details}`;
@@ -67,6 +68,7 @@ sap.ui.define(["./generateTxt"], function () {
     _createDetailRows: function (detailRows) {
       const self = this;
       let string = "";
+      let testata = null;
       detailRows.map(function (e, i) {
         //per ogni riga di tettaglio creo la parte fissa
         let fixedPart, contentPart;
@@ -78,6 +80,7 @@ sap.ui.define(["./generateTxt"], function () {
             progressiveNumber: "",
           });
           contentPart = self._composeContentPartTestata(e);
+          testata = e;
         } else {
           fixedPart = self._createFixedPart({
             type: "?",
@@ -85,7 +88,7 @@ sap.ui.define(["./generateTxt"], function () {
             progressiveYearPratica: "",
             progressiveNumber: "",
           });
-          contentPart = self._composeContentPart(e);
+          contentPart = self._composeContentPart(e, testata);
         }
         string += `${fixedPart}${contentPart}\n`;
       });
@@ -230,35 +233,50 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.RESUL_CONTROLLO2_DATA_LIMIT_ESITO, "n8")
       );
     },
-    _composeContentPart: function (e) {
-      console.log(e);
+    _composeContentPart: function (e, t) {
+      console.log(e, t);
       debugger;
       return (
         this._psD("", "an..5") +
         // Speditore/Esportatore
-        this._psD("", "a2") +
-        this._psD("", "an..16") +
-        this._psD("", "an..35") +
-        this._psD("", "an..35") +
-        this._psD("", "an..9") +
-        this._psD("", "an..35") +
-        this._psD("", "a2") +
+        // this._psD("", "a2") +
+        // this._psD("", "an..16") +
+        // this._psD("", "an..35") +
+        // this._psD("", "an..35") +
+        // this._psD("", "an..9") +
+        // this._psD("", "an..35") +
+        // this._psD("", "a2") +
+
+        this._psD(t.SPEDITORE1_PAESE_CF, "a2") +
+        this._psD(t.SPEDITORE2_CODICE_FISCALE, "an..16") +
+        this._psD(t.SPEDITORE3_RAGIONE_SOCIALE, "an..35") +
+        this._psD(t.SPEDITORE4_INDIRIZZO, "an..35") +
+        this._psD(t.SPEDITORE5_CAP, "an..9") +
+        this._psD(t.SPEDITORE6_CITTA, "an..35") +
+        this._psD(t.SPEDITORE7_PAESE, "a2") +
         // Destinatario
-        this._psD("", "a2") +
-        this._psD("", "an..16") +
-        this._psD("", "an..35") +
-        this._psD("", "an..35") +
-        this._psD("", "an..9") +
-        this._psD("", "an..35") +
-        this._psD("", "a2") +
-        this._psD("", "a2") +
-        this._psD("", "a2") +
+        // this._psD("", "a2") +
+        // this._psD("", "an..16") +
+        // this._psD("", "an..35") +
+        // this._psD("", "an..35") +
+        // this._psD("", "an..9") +
+        // this._psD("", "an..35") +
+        // this._psD("", "a2") +
+        this._psD(t.DESTINATARIO1_PAESE_CF, "a2") +
+        this._psD(t.DESTINATARIO2_CODICE_FISCALE, "an..16") +
+        this._psD(t.DESTINATARIO3_RAGIONE_SOCIALE, "an..35") +
+        this._psD(t.DESTINATARIO4_INDIRIZZO, "an..35") +
+        this._psD(t.DESTINATARIO5_CAP, "an..9") +
+        this._psD(t.DESTINATARIO6_CITTA, "an..35") +
+        this._psD(t.DESTINATARIO7_PAESE, "a2") +
+        this._psD(t.SPEDITORE7_PAESE, "a2") +
+        this._psD(t.DICHIARANTE9_CODICE_PAESE_SPEDIZIONE, "a2") +
         // Imballaggi
-        this._psD("", "n..7") +
+        this._psD(e.CONTAINER1_NRO_COLLI, "n..7") +
         // Container
-        this._psD("", "n..2") +
-        this._psD("", "an..11") +
-        this._psD("", "an..3") +
+        this._psD(e.CONTAINER2_NRO, "n..2") +
+        this._psD(e.CONTAINER3_SIGLA, "an..11") +
+        this._psD(e.CONTAINER4_INDICAZIONE_SCARICO, "an..3") +
         // Descrizione della merce; Marche e numeri
         this._psD(e.CONTAINER5_DESCRIZIONE_MERCE, "an..140") +
         this._psD(e.CONTAINER6_NUMERI_IMBALLAGIO, "an..42") +
@@ -287,7 +305,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.DOC_PRECEDENTE2_NATURA, "a..3") +
         this._psD(e.DOC_PRECEDENTE3_REGISTRO_DOC_SCORTA, "an..4") +
         this._psD(e.DOC_PRECEDENTE4_NRO_REGISTRAZIONE, "n..8") +
-        this._psD(e.DOC_PRECEDENTE4_NRO_REGISTRAZIONE, "a1") +
+        this._psD("", "a1") +
         this._psD(e.DOC_PRECEDENTE6_DATA_DOC_SCORTA, "n8") +
         this._psD("", "an..2") +
         this._psD("", "an8") +

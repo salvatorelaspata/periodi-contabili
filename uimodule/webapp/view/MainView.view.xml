@@ -137,314 +137,547 @@
                             </VBox>
                         </Panel>
                         <Panel expandable="true" expanded="true" headerText=".txt FILE">
-                            <form:SimpleForm editable="true" layout="ColumnLayout" title="Header" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false">
-                                <Label design="Bold" text="ID_DOC" />
-                                <Input value="{DauHeader>/ID_DOC}" />
-                                <Label design="Bold" text="TYPE_DAU" />
-                                <Input value="{DauHeader>/TYPE_DAU}" />
-                                <Label design="Bold" text="DICHIARAZIONE1_FORMULARIO" />
-                                <Input value="{DauHeader>/DICHIARAZIONE1_FORMULARIO}" />
-                                <Label design="Bold" text="DICHIARAZIONE2_TIPO" />
-                                <Input value="{DauHeader>/DICHIARAZIONE2_TIPO}" />
-                                <Label design="Bold" text="DICHIARAZIONE3_TIPO_SPEDIZIONE" />
-                                <Input value="{DauHeader>/DICHIARAZIONE3_TIPO_SPEDIZIONE}" />
-                                <Label design="Bold" text="DATA_ACCETTAZIONE" />
-                                <Input value="{DauHeader>/DATA_ACCETTAZIONE}" />
-                                <Label design="Bold" text="DATI_TESTATA_DICHIARANTI" />
-                                <Input value="{DauHeader>/DATI_TESTATA_DICHIARANTI}" />
-                                <Label design="Bold" text="TOTALE_ARTICOLI" />
-                                <Input value="{DauHeader>/TOTALE_ARTICOLI}" />
-                                <Label design="Bold" text="TOTALE_COLLI" />
-                                <Input value="{DauHeader>/TOTALE_COLLI}" />
-                                <Label design="Bold" text="SPEDITORE1_PAESE_CF" />
-                                <Input value="{DauHeader>/SPEDITORE1_PAESE_CF}" />
-                                <Label design="Bold" text="SPEDITORE2_CODICE_FISCALE" />
-                                <Input value="{DauHeader>/SPEDITORE2_CODICE_FISCALE}" />
-                                <Label design="Bold" text="SPEDITORE3_RAGIONE_SOCIALE" />
-                                <Input value="{DauHeader>/SPEDITORE3_RAGIONE_SOCIALE}" />
-                                <Label design="Bold" text="SPEDITORE4_INDIRIZZO" />
-                                <Input value="{DauHeader>/SPEDITORE4_INDIRIZZO}" />
-                                <Label design="Bold" text="SPEDITORE5_CAP" />
-                                <Input value="{DauHeader>/SPEDITORE5_CAP}" />
-                                <Label design="Bold" text="SPEDITORE6_CITTA" />
-                                <Input value="{DauHeader>/SPEDITORE6_CITTA}" />
-                                <Label design="Bold" text="SPEDITORE7_PAESE" />
-                                <Input value="{DauHeader>/SPEDITORE7_PAESE}" />
-                                <Label design="Bold" text="SPEDITORE8_NUMERO_RIFERIEMENTO" />
-                                <Input value="{DauHeader>/SPEDITORE8_NUMERO_RIFERIEMENTO}" />
-                                <Label design="Bold" text="DESTINATARIO1_PAESE_CF" />
-                                <Input value="{DauHeader>/DESTINATARIO1_PAESE_CF}" />
-                                <Label design="Bold" text="DESTINATARIO2_CODICE_FISCALE" />
-                                <Input value="{DauHeader>/DESTINATARIO2_CODICE_FISCALE}" />
-                                <Label design="Bold" text="DESTINATARIO3_RAGIONE_SOCIALE" />
-                                <Input value="{DauHeader>/DESTINATARIO3_RAGIONE_SOCIALE}" />
-                                <Label design="Bold" text="DESTINATARIO4_INDIRIZZO" />
-                                <Input value="{DauHeader>/DESTINATARIO4_INDIRIZZO}" />
-                                <Label design="Bold" text="DESTINATARIO5_CAP" />
-                                <Input value="{DauHeader>/DESTINATARIO5_CAP}" />
-                                <Label design="Bold" text="DESTINATARIO6_CITTA" />
-                                <Input value="{DauHeader>/DESTINATARIO6_CITTA}" />
-                                <Label design="Bold" text="DESTINATARIO7_PAESE" />
-                                <Input value="{DauHeader>/DESTINATARIO7_PAESE}" />
-                                <Label design="Bold" text="DESTINATARIO8_SPESE_CONSEGNA" />
-                                <Input value="{DauHeader>/DESTINATARIO8_SPESE_CONSEGNA}" />
-                                <Label design="Bold" text="DICHIARANTE1_REPPRESENTANZA" />
-                                <Input value="{DauHeader>/DICHIARANTE1_REPPRESENTANZA}" />
-                                <Label design="Bold" text="DICHIARANTE2_CODICE_PAESE" />
-                                <Input value="{DauHeader>/DICHIARANTE2_CODICE_PAESE}" />
-                                <Label design="Bold" text="DICHIARANTE3_DICHIARANTE" />
-                                <Input value="{DauHeader>/DICHIARANTE3_DICHIARANTE}" />
-                                <Label design="Bold" text="DICHIARANTE4_RAGIONE_SOCIALE" />
-                                <Input value="{DauHeader>/DICHIARANTE4_RAGIONE_SOCIALE}" />
-                                <Label design="Bold" text="DICHIARANTE5_INDIRIZZO" />
-                                <Input value="{DauHeader>/DICHIARANTE5_INDIRIZZO}" />
-                                <Label design="Bold" text="DICHIARANTE6_CAP" />
-                                <Input value="{DauHeader>/DICHIARANTE6_CAP}" />
-                                <Label design="Bold" text="DICHIARANTE7_CITTA" />
-                                <Input value="{DauHeader>/DICHIARANTE7_CITTA}" />
-                                <Label design="Bold" text="DICHIARANTE8_PAESE" />
-                                <Input value="{DauHeader>/DICHIARANTE8_PAESE}" />
-                                <Label design="Bold" text="DICHIARANTE9_CODICE_PAESE_SPEDIZIONE" />
-                                <Input value="{DauHeader>/DICHIARANTE9_CODICE_PAESE_SPEDIZIONE}" />
-                                <Label design="Bold" text="PAESE_DESTINAZIONE1_CODICE_PAESE" />
-                                <Input value="{DauHeader>/PAESE_DESTINAZIONE1_CODICE_PAESE}" />
-                                <Label design="Bold" text="PAESE_DESTINAZIONE2_PROVINCIA" />
-                                <Input value="{DauHeader>/PAESE_DESTINAZIONE2_PROVINCIA}" />
-                                <Label design="Bold" text="MEZZO_TRASPORTO1_NAZIONALITA" />
-                                <Input value="{DauHeader>/MEZZO_TRASPORTO1_NAZIONALITA}" />
-                                <Label design="Bold" text="MEZZO_TRASPORTO2_IDENTITA" />
-                                <Input value="{DauHeader>/MEZZO_TRASPORTO2_IDENTITA}" />
-                                <Label design="Bold" text="MEZZO_TRASPORTO19_TRASPORTO_CONTAINER" />
-                                <Input value="{DauHeader>/MEZZO_TRASPORTO19_TRASPORTO_CONTAINER}" />
-                                <Label design="Bold" text="TERMINI_CONSEGNA1_CONDIZIONI" />
-                                <Input value="{DauHeader>/TERMINI_CONSEGNA1_CONDIZIONI}" />
-                                <Label design="Bold" text="TERMINI_CONSEGNA2_LUOGO_CONVENUTO" />
-                                <Input value="{DauHeader>/TERMINI_CONSEGNA2_LUOGO_CONVENUTO}" />
-                                <Label design="Bold" text="TERMINI_CONSEGNA3_CODICE_LUOGO_CONVENUTO" />
-                                <Input value="{DauHeader>/TERMINI_CONSEGNA3_CODICE_LUOGO_CONVENUTO}" />
-                                <Label design="Bold" text="MEZZO_FRONTIERA1_NAZIONALITA" />
-                                <Input value="{DauHeader>/MEZZO_FRONTIERA1_NAZIONALITA}" />
-                                <Label design="Bold" text="MEZZO_FRONTIERA2_IDENTITA" />
-                                <Input value="{DauHeader>/MEZZO_FRONTIERA2_IDENTITA}" />
-                                <Label design="Bold" text="TRANSAZIONE1_VALUTA" />
-                                <Input value="{DauHeader>/TRANSAZIONE1_VALUTA}" />
-                                <Label design="Bold" text="TRANSAZIONE2_TOTALE_FATTURATO" />
-                                <Input value="{DauHeader>/TRANSAZIONE2_TOTALE_FATTURATO}" />
-                                <Label design="Bold" text="TRANSAZIONE23_TASSO_CAMBIO" />
-                                <Input value="{DauHeader>/TRANSAZIONE23_TASSO_CAMBIO}" />
-                                <Label design="Bold" text="TRANSAZIONE24_CODICE_TRANSAZIONE" />
-                                <Input value="{DauHeader>/TRANSAZIONE24_CODICE_TRANSAZIONE}" />
-                                <Label design="Bold" text="MODO_TRANSPORTO_FRONTIERA" />
-                                <Input value="{DauHeader>/MODO_TRANSPORTO_FRONTIERA}" />
-                                <Label design="Bold" text="MODO_TRANSPORTO_INTERNO" />
-                                <Input value="{DauHeader>/MODO_TRANSPORTO_INTERNO}" />
-                                <Label design="Bold" text="LUOGO_CARICO" />
-                                <Input value="{DauHeader>/LUOGO_CARICO}" />
-                                <Label design="Bold" text="UFFICIO_ENTRATA1_NAZIONALITA" />
-                                <Input value="{DauHeader>/UFFICIO_ENTRATA1_NAZIONALITA}" />
-                                <Label design="Bold" text="UFFICIO_ENTRATA2_CODICE" />
-                                <Input value="{DauHeader>/UFFICIO_ENTRATA2_CODICE}" />
-                                <Label design="Bold" text="UFFICIO_ENTRATA3_DENOMINAZIONE" />
-                                <Input value="{DauHeader>/UFFICIO_ENTRATA3_DENOMINAZIONE}" />
-                                <Label design="Bold" text="LOCAZZIONE_MERCI1_LUOGO_VISITA" />
-                                <Input value="{DauHeader>/LOCAZZIONE_MERCI1_LUOGO_VISITA}" />
-                                <Label design="Bold" text="LOCAZZIONE_MERCI2_LUOGO_SCARICO" />
-                                <Input value="{DauHeader>/LOCAZZIONE_MERCI2_LUOGO_SCARICO}" />
-                                <Label design="Bold" text="PAGAMENTO_DIFFERITO1_NUMERO_CONTO" />
-                                <Input value="{DauHeader>/PAGAMENTO_DIFFERITO1_NUMERO_CONTO}" />
-                                <Label design="Bold" text="PAGAMENTO_DIFFERITO2_CIN_CONTO" />
-                                <Input value="{DauHeader>/PAGAMENTO_DIFFERITO2_CIN_CONTO}" />
-                                <Label design="Bold" text="MAGAZZIONO1_ACCERTAMENTO" />
-                                <Input value="{DauHeader>/MAGAZZIONO1_ACCERTAMENTO}" />
-                                <Label design="Bold" text="MAGAZZIONO2_TIPO_DEPOSITO" />
-                                <Input value="{DauHeader>/MAGAZZIONO2_TIPO_DEPOSITO}" />
-                                <Label design="Bold" text="MAGAZZIONO3_ID_DEPOSITO" />
-                                <Input value="{DauHeader>/MAGAZZIONO3_ID_DEPOSITO}" />
-                                <Label design="Bold" text="MAGAZZIONO4_CIN_ID_DEPOSITO" />
-                                <Input value="{DauHeader>/MAGAZZIONO4_CIN_ID_DEPOSITO}" />
-                                <Label design="Bold" text="MAGAZZIONO5_CODICE_PAESE" />
-                                <Input value="{DauHeader>/MAGAZZIONO5_CODICE_PAESE}" />
-                                <Label design="Bold" text="MAGAZZIONO6_UFFICIO_CONTROLLO" />
-                                <Input value="{DauHeader>/MAGAZZIONO6_UFFICIO_CONTROLLO}" />
-                                <Label design="Bold" text="MAGAZZIONO7_DATA_LIMITE_TEMPORANEA" />
-                                <Input value="{DauHeader>/MAGAZZIONO7_DATA_LIMITE_TEMPORANEA}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE1_PAESE_CF" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE1_PAESE_CF}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE2_CODICE_FISCALE" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE2_CODICE_FISCALE}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE3_RAGIONE_SOCIALE" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE3_RAGIONE_SOCIALE}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE4_INDIRIZZO" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE4_INDIRIZZO}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE5_CAP" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE5_CAP}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE6_COMUNE" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE6_COMUNE}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE7_PAESE" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE7_PAESE}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE8_REPPRESENTANTE" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE8_REPPRESENTANTE}" />
-                                <Label design="Bold" text="OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE" />
-                                <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE}" />
-                                <Label design="Bold" text="UFFICIO_PASSAGIO1_NRO" />
-                                <Input value="{DauHeader>/UFFICIO_PASSAGIO1_NRO}" />
-                                <Label design="Bold" text="UFFICIO_PASSAGIO2_UFFICI" />
-                                <Input value="{DauHeader>/UFFICIO_PASSAGIO2_UFFICI}" />
-                                <Label design="Bold" text="GARANZIA1_NRO" />
-                                <Input value="{DauHeader>/GARANZIA1_NRO}" />
-                                <Label design="Bold" text="GARANZIA2_TIPO" />
-                                <Input value="{DauHeader>/GARANZIA2_TIPO}" />
-                                <Label design="Bold" text="GARANZIA3_GRN_ID" />
-                                <Input value="{DauHeader>/GARANZIA3_GRN_ID}" />
-                                <Label design="Bold" text="GARANZIA4_ID_ALTRE" />
-                                <Input value="{DauHeader>/GARANZIA4_ID_ALTRE}" />
-                                <Label design="Bold" text="GARANZIA5_CODICE_ACCESSO" />
-                                <Input value="{DauHeader>/GARANZIA5_CODICE_ACCESSO}" />
-                                <Label design="Bold" text="GARANZIA6_UFFICIO" />
-                                <Input value="{DauHeader>/GARANZIA6_UFFICIO}" />
-                                <Label design="Bold" text="GARANZIA7_IMPORTO" />
-                                <Input value="{DauHeader>/GARANZIA7_IMPORTO}" />
-                                <Label design="Bold" text="GARANZIA8_NON_VALIDA_EU" />
-                                <Input value="{DauHeader>/GARANZIA8_NON_VALIDA_EU}" />
-                                <Label design="Bold" text="GARANZIA9_NON_VALIDA_EXTRA_EU" />
-                                <Input value="{DauHeader>/GARANZIA9_NON_VALIDA_EXTRA_EU}" />
-                                <Label design="Bold" text="UFFICIO_DESTINAZIONE1_NAME" />
-                                <Input value="{DauHeader>/UFFICIO_DESTINAZIONE1_NAME}" />
-                                <Label design="Bold" text="UFFICIO_DESTINAZIONE2_CF_DEST_AUTORIZZATO" />
-                                <Input value="{DauHeader>/UFFICIO_DESTINAZIONE2_CF_DEST_AUTORIZZATO}" />
-                                <Label design="Bold" text="ID_SIGILLI1_NRO" />
-                                <Input value="{DauHeader>/ID_SIGILLI1_NRO}" />
-                                <Label design="Bold" text="ID_SIGILLI2_DESCRIZIONE" />
-                                <Input value="{DauHeader>/ID_SIGILLI2_DESCRIZIONE}" />
-                                <Label design="Bold" text="RESUL_CONTROLLO1_DATA_LIMIT_ARRIVO" />
-                                <Input value="{DauHeader>/RESUL_CONTROLLO1_DATA_LIMIT_ARRIVO}" />
-                                <Label design="Bold" text="RESUL_CONTROLLO2_DATA_LIMIT_ESITO" />
-                                <Input value="{DauHeader>/RESUL_CONTROLLO2_DATA_LIMIT_ESITO}" />
-                            </form:SimpleForm>
-                            <!-- <Table items="{DauSingleItemModel>/}">
-                                <columns>
-                                    <Column>ID_DOC</Column>
-                                    <Column>REGIME</Column>
-                                    <Column>CODICE_MERCI</Column>
-                                    <Column>CONTAINER1_NRO_COLLI</Column>
-                                    <Column>CONTAINER2_NRO</Column>
-                                    <Column>CONTAINER3_SIGLA</Column>
-                                    <Column>CONTAINER4_INDICAZIONE_SCARICO</Column>
-                                    <Column>CONTAINER5_DESCRIZIONE_MERCE</Column>
-                                    <Column>CONTAINER6_NUMERI_IMBALLAGIO</Column>
-                                    <Column>CONTAINER7_TIPO_IMBALLAGIO</Column>
-                                    <Column>CONTAINER8_NRO_PEZZI</Column>
-                                    <Column>CONTAINER9_CODICE_MERCE_SENSIBILE</Column>
-                                    <Column>CONTAINER10_QUANTITA_MERCE_SENSIBILE</Column>
-                                    <Column>ARTICOLO</Column>
-                                    <Column>PROVINCIA_MERCE</Column>
-                                    <Column>MASSA_LORDA</Column>
-                                    <Column>PREFERENCE</Column>
-                                    <Column>MASSA_NETTA</Column>
-                                    <Column>CONTINGENTI1_NRO_DECHIARATO</Column>
-                                    <Column>CONTINGENTI2_IDENTIFICATI</Column>
-                                    <Column>DOC_PRECEDENTE1_TIPO</Column>
-                                    <Column>DOC_PRECEDENTE2_NATURA</Column>
-                                    <Column>DOC_PRECEDENTE3_REGISTRO_DOC_SCORTA</Column>
-                                    <Column>DOC_PRECEDENTE4_NRO_REGISTRAZIONE</Column>
-                                    <Column>DOC_PRECEDENTE6_DATA_DOC_SCORTA</Column>
-                                    <Column>DOC_PRECEDENTE10_ID_MRN</Column>
-                                    <Column>DOC_PRECEDENTE11_INF_COMPLEMENTARI</Column>
-                                    <Column>UNITA_SUPPLEMENTARI</Column>
-                                    <Column>PREZZO_ARTICOLO_EUR</Column>
-                                    <Column>METODO_VALUTAZIONE</Column>
-                                    <Column>MENZIONI_SPECIALI1_PRIMO_TIN</Column>
-                                    <Column>MENZIONI_SPECIALI2_SECONDO_TIN</Column>
-                                    <Column>MENZIONI_SPECIALI3_IMPORTO_FATTURA</Column>
-                                    <Column>CERTIFICATI15_NRO_DICHIARATO</Column>
-                                    <Column>CERTIFICATI16_TIPO_DOC</Column>
-                                    <Column>CERTIFICATI17_PAESE_EMISSIONE</Column>
-                                    <Column>CERTIFICATI18_ANNO_EMISSIONE</Column>
-                                    <Column>CERTIFICATI19_ID_DOC</Column>
-                                    <Column>CERTIFICATI20_QUANTITA_DOC</Column>
-                                    <Column>CERTIFICATI21_UNITA_MISURA_DOC</Column>
-                                    <Column>UNITA_MISURA24_NRO_DICHIARATO</Column>
-                                    <Column>UNITA_MISURA25_MISURA_LIQUIDAZIONE</Column>
-                                    <Column>UNITA_MISURA26_QUANTITA_LIQUIDAZIONE</Column>
-                                    <Column>UNITA_MISURA27_QUALIFICATORE_LIQUIDAZIONE</Column>
-                                    <Column>UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE</Column>
-                                    <Column>UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE</Column>
-                                    <Column>UNITA_MISURA30_PREZZO_ENTRATA</Column>
-                                    <Column>VALORE_STATISTICO</Column>
-                                    <Column>MENZIONI_SPECIALI1_ESPORTAZIONE_CE</Column>
-                                    <Column>MENZIONI_SPECIALI2_ESPORTAZIONE_PAESE</Column>
-                                    <Column>CALCOLO_DIRITTI_NRO_DICHIARATO</Column>
-                                    <Column>CALCOLO_DIRITTI1_CODICE_TRIBUTO</Column>
-                                    <Column>CALCOLO_DIRITTI2_BASE_IMPONIBILE</Column>
-                                    <Column>CALCOLO_DIRITTI10_IMPORTO_TRIBUTO</Column>
-                                    <Column>CALCOLO_DIRITTI11_MODALITA_PAGAMENTO</Column>
-                                    <Column>TOTALE_DIRITTI_PAGARE</Column>
-                                    <Column>TOTALE_GENERALE_PAGARE</Column>
-                                </columns>
-                                <items>
-                                    <ColumnListItem>
-                                        <cells>
-                                            <Text text="{DauSingleItemModel>ID_DOC}" />
-                                            <Text text="{DauSingleItemModel>REGIME}" />
-                                            <Text text="{DauSingleItemModel>CODICE_MERCI}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER1_NRO_COLLI}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER2_NRO}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER3_SIGLA}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER4_INDICAZIONE_SCARICO}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER5_DESCRIZIONE_MERCE}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER6_NUMERI_IMBALLAGIO}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER7_TIPO_IMBALLAGIO}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER8_NRO_PEZZI}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER9_CODICE_MERCE_SENSIBILE}" />
-                                            <Text text="{DauSingleItemModel>CONTAINER10_QUANTITA_MERCE_SENSIBILE}" />
-                                            <Text text="{DauSingleItemModel>ARTICOLO}" />
-                                            <Text text="{DauSingleItemModel>PROVINCIA_MERCE}" />
-                                            <Text text="{DauSingleItemModel>MASSA_LORDA}" />
-                                            <Text text="{DauSingleItemModel>PREFERENCE}" />
-                                            <Text text="{DauSingleItemModel>MASSA_NETTA}" />
-                                            <Text text="{DauSingleItemModel>CONTINGENTI1_NRO_DECHIARATO}" />
-                                            <Text text="{DauSingleItemModel>CONTINGENTI2_IDENTIFICATI}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE1_TIPO}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE2_NATURA}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE3_REGISTRO_DOC_SCORTA}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE4_NRO_REGISTRAZIONE}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE6_DATA_DOC_SCORTA}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE10_ID_MRN}" />
-                                            <Text text="{DauSingleItemModel>DOC_PRECEDENTE11_INF_COMPLEMENTARI}" />
-                                            <Text text="{DauSingleItemModel>UNITA_SUPPLEMENTARI}" />
-                                            <Text text="{DauSingleItemModel>PREZZO_ARTICOLO_EUR}" />
-                                            <Text text="{DauSingleItemModel>METODO_VALUTAZIONE}" />
-                                            <Text text="{DauSingleItemModel>MENZIONI_SPECIALI1_PRIMO_TIN}" />
-                                            <Text text="{DauSingleItemModel>MENZIONI_SPECIALI2_SECONDO_TIN}" />
-                                            <Text text="{DauSingleItemModel>MENZIONI_SPECIALI3_IMPORTO_FATTURA}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI15_NRO_DICHIARATO}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI16_TIPO_DOC}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI17_PAESE_EMISSIONE}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI18_ANNO_EMISSIONE}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI19_ID_DOC}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI20_QUANTITA_DOC}" />
-                                            <Text text="{DauSingleItemModel>CERTIFICATI21_UNITA_MISURA_DOC}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA24_NRO_DICHIARATO}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA25_MISURA_LIQUIDAZIONE}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA26_QUANTITA_LIQUIDAZIONE}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA27_QUALIFICATORE_LIQUIDAZIONE}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE}" />
-                                            <Text text="{DauSingleItemModel>UNITA_MISURA30_PREZZO_ENTRATA}" />
-                                            <Text text="{DauSingleItemModel>VALORE_STATISTICO}" />
-                                            <Text text="{DauSingleItemModel>MENZIONI_SPECIALI1_ESPORTAZIONE_CE}" />
-                                            <Text text="{DauSingleItemModel>MENZIONI_SPECIALI2_ESPORTAZIONE_PAESE}" />
-                                            <Text text="{DauSingleItemModel>CALCOLO_DIRITTI_NRO_DICHIARATO}" />
-                                            <Text text="{DauSingleItemModel>CALCOLO_DIRITTI1_CODICE_TRIBUTO}" />
-                                            <Text text="{DauSingleItemModel>CALCOLO_DIRITTI2_BASE_IMPONIBILE}" />
-                                            <Text text="{DauSingleItemModel>CALCOLO_DIRITTI10_IMPORTO_TRIBUTO}" />
-                                            <Text text="{DauSingleItemModel>CALCOLO_DIRITTI11_MODALITA_PAGAMENTO}" />
-                                            <Text text="{DauSingleItemModel>TOTALE_DIRITTI_PAGARE}" />
-                                            <Text text="{DauSingleItemModel>TOTALE_GENERALE_PAGARE}" />
-                                        </cells>
-                                    </ColumnListItem>
-                                </items>
-                            </Table> -->
+                            <VBox>
+                                <form:SimpleForm editable="true" layout="ColumnLayout" title="Header" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                                    <Label design="Bold" text="ID_DOC" />
+                                    <Input value="{DauHeader>/ID_DOC}" />
+                                    <Label design="Bold" text="TYPE_DAU" />
+                                    <Input value="{DauHeader>/TYPE_DAU}" />
+                                    <Label design="Bold" text="DICHIARAZIONE1_FORMULARIO" />
+                                    <Input value="{DauHeader>/DICHIARAZIONE1_FORMULARIO}" />
+                                    <Label design="Bold" text="DICHIARAZIONE2_TIPO" />
+                                    <Input value="{DauHeader>/DICHIARAZIONE2_TIPO}" />
+                                    <Label design="Bold" text="DICHIARAZIONE3_TIPO_SPEDIZIONE" />
+                                    <Input value="{DauHeader>/DICHIARAZIONE3_TIPO_SPEDIZIONE}" />
+                                    <Label design="Bold" text="DATA_ACCETTAZIONE" />
+                                    <Input value="{DauHeader>/DATA_ACCETTAZIONE}" />
+                                    <Label design="Bold" text="DATI_TESTATA_DICHIARANTI" />
+                                    <Input value="{DauHeader>/DATI_TESTATA_DICHIARANTI}" />
+                                    <Label design="Bold" text="TOTALE_ARTICOLI" />
+                                    <Input value="{DauHeader>/TOTALE_ARTICOLI}" />
+                                    <Label design="Bold" text="TOTALE_COLLI" />
+                                    <Input value="{DauHeader>/TOTALE_COLLI}" />
+                                    <Label design="Bold" text="SPEDITORE1_PAESE_CF" />
+                                    <Input value="{DauHeader>/SPEDITORE1_PAESE_CF}" />
+                                    <Label design="Bold" text="SPEDITORE2_CODICE_FISCALE" />
+                                    <Input value="{DauHeader>/SPEDITORE2_CODICE_FISCALE}" />
+                                    <Label design="Bold" text="SPEDITORE3_RAGIONE_SOCIALE" />
+                                    <Input value="{DauHeader>/SPEDITORE3_RAGIONE_SOCIALE}" />
+                                    <Label design="Bold" text="SPEDITORE4_INDIRIZZO" />
+                                    <Input value="{DauHeader>/SPEDITORE4_INDIRIZZO}" />
+                                    <Label design="Bold" text="SPEDITORE5_CAP" />
+                                    <Input value="{DauHeader>/SPEDITORE5_CAP}" />
+                                    <Label design="Bold" text="SPEDITORE6_CITTA" />
+                                    <Input value="{DauHeader>/SPEDITORE6_CITTA}" />
+                                    <Label design="Bold" text="SPEDITORE7_PAESE" />
+                                    <Input value="{DauHeader>/SPEDITORE7_PAESE}" />
+                                    <Label design="Bold" text="SPEDITORE8_NUMERO_RIFERIEMENTO" />
+                                    <Input value="{DauHeader>/SPEDITORE8_NUMERO_RIFERIEMENTO}" />
+                                    <Label design="Bold" text="DESTINATARIO1_PAESE_CF" />
+                                    <Input value="{DauHeader>/DESTINATARIO1_PAESE_CF}" />
+                                    <Label design="Bold" text="DESTINATARIO2_CODICE_FISCALE" />
+                                    <Input value="{DauHeader>/DESTINATARIO2_CODICE_FISCALE}" />
+                                    <Label design="Bold" text="DESTINATARIO3_RAGIONE_SOCIALE" />
+                                    <Input value="{DauHeader>/DESTINATARIO3_RAGIONE_SOCIALE}" />
+                                    <Label design="Bold" text="DESTINATARIO4_INDIRIZZO" />
+                                    <Input value="{DauHeader>/DESTINATARIO4_INDIRIZZO}" />
+                                    <Label design="Bold" text="DESTINATARIO5_CAP" />
+                                    <Input value="{DauHeader>/DESTINATARIO5_CAP}" />
+                                    <Label design="Bold" text="DESTINATARIO6_CITTA" />
+                                    <Input value="{DauHeader>/DESTINATARIO6_CITTA}" />
+                                    <Label design="Bold" text="DESTINATARIO7_PAESE" />
+                                    <Input value="{DauHeader>/DESTINATARIO7_PAESE}" />
+                                    <Label design="Bold" text="DESTINATARIO8_SPESE_CONSEGNA" />
+                                    <Input value="{DauHeader>/DESTINATARIO8_SPESE_CONSEGNA}" />
+                                    <Label design="Bold" text="DICHIARANTE1_REPPRESENTANZA" />
+                                    <Input value="{DauHeader>/DICHIARANTE1_REPPRESENTANZA}" />
+                                    <Label design="Bold" text="DICHIARANTE2_CODICE_PAESE" />
+                                    <Input value="{DauHeader>/DICHIARANTE2_CODICE_PAESE}" />
+                                    <Label design="Bold" text="DICHIARANTE3_DICHIARANTE" />
+                                    <Input value="{DauHeader>/DICHIARANTE3_DICHIARANTE}" />
+                                    <Label design="Bold" text="DICHIARANTE4_RAGIONE_SOCIALE" />
+                                    <Input value="{DauHeader>/DICHIARANTE4_RAGIONE_SOCIALE}" />
+                                    <Label design="Bold" text="DICHIARANTE5_INDIRIZZO" />
+                                    <Input value="{DauHeader>/DICHIARANTE5_INDIRIZZO}" />
+                                    <Label design="Bold" text="DICHIARANTE6_CAP" />
+                                    <Input value="{DauHeader>/DICHIARANTE6_CAP}" />
+                                    <Label design="Bold" text="DICHIARANTE7_CITTA" />
+                                    <Input value="{DauHeader>/DICHIARANTE7_CITTA}" />
+                                    <Label design="Bold" text="DICHIARANTE8_PAESE" />
+                                    <Input value="{DauHeader>/DICHIARANTE8_PAESE}" />
+                                    <Label design="Bold" text="DICHIARANTE9_CODICE_PAESE_SPEDIZIONE" />
+                                    <Input value="{DauHeader>/DICHIARANTE9_CODICE_PAESE_SPEDIZIONE}" />
+                                    <Label design="Bold" text="PAESE_DESTINAZIONE1_CODICE_PAESE" />
+                                    <Input value="{DauHeader>/PAESE_DESTINAZIONE1_CODICE_PAESE}" />
+                                    <Label design="Bold" text="PAESE_DESTINAZIONE2_PROVINCIA" />
+                                    <Input value="{DauHeader>/PAESE_DESTINAZIONE2_PROVINCIA}" />
+                                    <Label design="Bold" text="MEZZO_TRASPORTO1_NAZIONALITA" />
+                                    <Input value="{DauHeader>/MEZZO_TRASPORTO1_NAZIONALITA}" />
+                                    <Label design="Bold" text="MEZZO_TRASPORTO2_IDENTITA" />
+                                    <Input value="{DauHeader>/MEZZO_TRASPORTO2_IDENTITA}" />
+                                    <Label design="Bold" text="MEZZO_TRASPORTO19_TRASPORTO_CONTAINER" />
+                                    <Input value="{DauHeader>/MEZZO_TRASPORTO19_TRASPORTO_CONTAINER}" />
+                                    <Label design="Bold" text="TERMINI_CONSEGNA1_CONDIZIONI" />
+                                    <Input value="{DauHeader>/TERMINI_CONSEGNA1_CONDIZIONI}" />
+                                    <Label design="Bold" text="TERMINI_CONSEGNA2_LUOGO_CONVENUTO" />
+                                    <Input value="{DauHeader>/TERMINI_CONSEGNA2_LUOGO_CONVENUTO}" />
+                                    <Label design="Bold" text="TERMINI_CONSEGNA3_CODICE_LUOGO_CONVENUTO" />
+                                    <Input value="{DauHeader>/TERMINI_CONSEGNA3_CODICE_LUOGO_CONVENUTO}" />
+                                    <Label design="Bold" text="MEZZO_FRONTIERA1_NAZIONALITA" />
+                                    <Input value="{DauHeader>/MEZZO_FRONTIERA1_NAZIONALITA}" />
+                                    <Label design="Bold" text="MEZZO_FRONTIERA2_IDENTITA" />
+                                    <Input value="{DauHeader>/MEZZO_FRONTIERA2_IDENTITA}" />
+                                    <Label design="Bold" text="TRANSAZIONE1_VALUTA" />
+                                    <Input value="{DauHeader>/TRANSAZIONE1_VALUTA}" />
+                                    <Label design="Bold" text="TRANSAZIONE2_TOTALE_FATTURATO" />
+                                    <Input value="{DauHeader>/TRANSAZIONE2_TOTALE_FATTURATO}" />
+                                    <Label design="Bold" text="TRANSAZIONE23_TASSO_CAMBIO" />
+                                    <Input value="{DauHeader>/TRANSAZIONE23_TASSO_CAMBIO}" />
+                                    <Label design="Bold" text="TRANSAZIONE24_CODICE_TRANSAZIONE" />
+                                    <Input value="{DauHeader>/TRANSAZIONE24_CODICE_TRANSAZIONE}" />
+                                    <Label design="Bold" text="MODO_TRANSPORTO_FRONTIERA" />
+                                    <Input value="{DauHeader>/MODO_TRANSPORTO_FRONTIERA}" />
+                                    <Label design="Bold" text="MODO_TRANSPORTO_INTERNO" />
+                                    <Input value="{DauHeader>/MODO_TRANSPORTO_INTERNO}" />
+                                    <Label design="Bold" text="LUOGO_CARICO" />
+                                    <Input value="{DauHeader>/LUOGO_CARICO}" />
+                                    <Label design="Bold" text="UFFICIO_ENTRATA1_NAZIONALITA" />
+                                    <Input value="{DauHeader>/UFFICIO_ENTRATA1_NAZIONALITA}" />
+                                    <Label design="Bold" text="UFFICIO_ENTRATA2_CODICE" />
+                                    <Input value="{DauHeader>/UFFICIO_ENTRATA2_CODICE}" />
+                                    <Label design="Bold" text="UFFICIO_ENTRATA3_DENOMINAZIONE" />
+                                    <Input value="{DauHeader>/UFFICIO_ENTRATA3_DENOMINAZIONE}" />
+                                    <Label design="Bold" text="LOCAZZIONE_MERCI1_LUOGO_VISITA" />
+                                    <Input value="{DauHeader>/LOCAZZIONE_MERCI1_LUOGO_VISITA}" />
+                                    <Label design="Bold" text="LOCAZZIONE_MERCI2_LUOGO_SCARICO" />
+                                    <Input value="{DauHeader>/LOCAZZIONE_MERCI2_LUOGO_SCARICO}" />
+                                    <Label design="Bold" text="PAGAMENTO_DIFFERITO1_NUMERO_CONTO" />
+                                    <Input value="{DauHeader>/PAGAMENTO_DIFFERITO1_NUMERO_CONTO}" />
+                                    <Label design="Bold" text="PAGAMENTO_DIFFERITO2_CIN_CONTO" />
+                                    <Input value="{DauHeader>/PAGAMENTO_DIFFERITO2_CIN_CONTO}" />
+                                    <Label design="Bold" text="MAGAZZIONO1_ACCERTAMENTO" />
+                                    <Input value="{DauHeader>/MAGAZZIONO1_ACCERTAMENTO}" />
+                                    <Label design="Bold" text="MAGAZZIONO2_TIPO_DEPOSITO" />
+                                    <Input value="{DauHeader>/MAGAZZIONO2_TIPO_DEPOSITO}" />
+                                    <Label design="Bold" text="MAGAZZIONO3_ID_DEPOSITO" />
+                                    <Input value="{DauHeader>/MAGAZZIONO3_ID_DEPOSITO}" />
+                                    <Label design="Bold" text="MAGAZZIONO4_CIN_ID_DEPOSITO" />
+                                    <Input value="{DauHeader>/MAGAZZIONO4_CIN_ID_DEPOSITO}" />
+                                    <Label design="Bold" text="MAGAZZIONO5_CODICE_PAESE" />
+                                    <Input value="{DauHeader>/MAGAZZIONO5_CODICE_PAESE}" />
+                                    <Label design="Bold" text="MAGAZZIONO6_UFFICIO_CONTROLLO" />
+                                    <Input value="{DauHeader>/MAGAZZIONO6_UFFICIO_CONTROLLO}" />
+                                    <Label design="Bold" text="MAGAZZIONO7_DATA_LIMITE_TEMPORANEA" />
+                                    <Input value="{DauHeader>/MAGAZZIONO7_DATA_LIMITE_TEMPORANEA}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE1_PAESE_CF" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE1_PAESE_CF}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE2_CODICE_FISCALE" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE2_CODICE_FISCALE}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE3_RAGIONE_SOCIALE" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE3_RAGIONE_SOCIALE}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE4_INDIRIZZO" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE4_INDIRIZZO}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE5_CAP" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE5_CAP}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE6_COMUNE" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE6_COMUNE}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE7_PAESE" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE7_PAESE}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE8_REPPRESENTANTE" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE8_REPPRESENTANTE}" />
+                                    <Label design="Bold" text="OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE" />
+                                    <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE}" />
+                                    <Label design="Bold" text="UFFICIO_PASSAGIO1_NRO" />
+                                    <Input value="{DauHeader>/UFFICIO_PASSAGIO1_NRO}" />
+                                    <Label design="Bold" text="UFFICIO_PASSAGIO2_UFFICI" />
+                                    <Input value="{DauHeader>/UFFICIO_PASSAGIO2_UFFICI}" />
+                                    <Label design="Bold" text="GARANZIA1_NRO" />
+                                    <Input value="{DauHeader>/GARANZIA1_NRO}" />
+                                    <Label design="Bold" text="GARANZIA2_TIPO" />
+                                    <Input value="{DauHeader>/GARANZIA2_TIPO}" />
+                                    <Label design="Bold" text="GARANZIA3_GRN_ID" />
+                                    <Input value="{DauHeader>/GARANZIA3_GRN_ID}" />
+                                    <Label design="Bold" text="GARANZIA4_ID_ALTRE" />
+                                    <Input value="{DauHeader>/GARANZIA4_ID_ALTRE}" />
+                                    <Label design="Bold" text="GARANZIA5_CODICE_ACCESSO" />
+                                    <Input value="{DauHeader>/GARANZIA5_CODICE_ACCESSO}" />
+                                    <Label design="Bold" text="GARANZIA6_UFFICIO" />
+                                    <Input value="{DauHeader>/GARANZIA6_UFFICIO}" />
+                                    <Label design="Bold" text="GARANZIA7_IMPORTO" />
+                                    <Input value="{DauHeader>/GARANZIA7_IMPORTO}" />
+                                    <Label design="Bold" text="GARANZIA8_NON_VALIDA_EU" />
+                                    <Input value="{DauHeader>/GARANZIA8_NON_VALIDA_EU}" />
+                                    <Label design="Bold" text="GARANZIA9_NON_VALIDA_EXTRA_EU" />
+                                    <Input value="{DauHeader>/GARANZIA9_NON_VALIDA_EXTRA_EU}" />
+                                    <Label design="Bold" text="UFFICIO_DESTINAZIONE1_NAME" />
+                                    <Input value="{DauHeader>/UFFICIO_DESTINAZIONE1_NAME}" />
+                                    <Label design="Bold" text="UFFICIO_DESTINAZIONE2_CF_DEST_AUTORIZZATO" />
+                                    <Input value="{DauHeader>/UFFICIO_DESTINAZIONE2_CF_DEST_AUTORIZZATO}" />
+                                    <Label design="Bold" text="ID_SIGILLI1_NRO" />
+                                    <Input value="{DauHeader>/ID_SIGILLI1_NRO}" />
+                                    <Label design="Bold" text="ID_SIGILLI2_DESCRIZIONE" />
+                                    <Input value="{DauHeader>/ID_SIGILLI2_DESCRIZIONE}" />
+                                    <Label design="Bold" text="RESUL_CONTROLLO1_DATA_LIMIT_ARRIVO" />
+                                    <Input value="{DauHeader>/RESUL_CONTROLLO1_DATA_LIMIT_ARRIVO}" />
+                                    <Label design="Bold" text="RESUL_CONTROLLO2_DATA_LIMIT_ESITO" />
+                                    <Input value="{DauHeader>/RESUL_CONTROLLO2_DATA_LIMIT_ESITO}" />
+                                </form:SimpleForm>
+                                <ScrollContainer focusable="false" height="auto" horizontal="true" vertical="false" width="auto" blocked="false" busy="false" busyIndicatorDelay="1000" busyIndicatorSize="Medium" fieldGroupIds="[]" visible="true">
+                                    <Table items="{DauSingleItemModel>/}">
+                                        <columns>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="ID_DOC" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="REGIME" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CODICE_MERCI" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER1_NRO_COLLI" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER2_NRO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER3_SIGLA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER4_INDICAZIONE_SCARICO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER5_DESCRIZIONE_MERCE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER6_NUMERI_IMBALLAGIO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER7_TIPO_IMBALLAGIO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER8_NRO_PEZZI" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER9_CODICE_MERCE_SENSIBILE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTAINER10_QUANTITA_MERCE_SENSIBILE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="ARTICOLO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="PROVINCIA_MERCE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MASSA_LORDA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="PREFERENCE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MASSA_NETTA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTINGENTI1_NRO_DECHIARATO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CONTINGENTI2_IDENTIFICATI" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE1_TIPO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE2_NATURA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE3_REGISTRO_DOC_SCORTA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE4_NRO_REGISTRAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE6_DATA_DOC_SCORTA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE10_ID_MRN" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="DOC_PRECEDENTE11_INF_COMPLEMENTARI" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_SUPPLEMENTARI" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="PREZZO_ARTICOLO_EUR" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="METODO_VALUTAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MENZIONI_SPECIALI1_PRIMO_TIN" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MENZIONI_SPECIALI2_SECONDO_TIN" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MENZIONI_SPECIALI3_IMPORTO_FATTURA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI15_NRO_DICHIARATO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI16_TIPO_DOC" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI17_PAESE_EMISSIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI18_ANNO_EMISSIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI19_ID_DOC" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI20_QUANTITA_DOC" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CERTIFICATI21_UNITA_MISURA_DOC" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA24_NRO_DICHIARATO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA25_MISURA_LIQUIDAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA26_QUANTITA_LIQUIDAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA27_QUALIFICATORE_LIQUIDAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="UNITA_MISURA30_PREZZO_ENTRATA" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="VALORE_STATISTICO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MENZIONI_SPECIALI1_ESPORTAZIONE_CE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="MENZIONI_SPECIALI2_ESPORTAZIONE_PAESE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CALCOLO_DIRITTI_NRO_DICHIARATO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CALCOLO_DIRITTI1_CODICE_TRIBUTO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CALCOLO_DIRITTI2_BASE_IMPONIBILE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CALCOLO_DIRITTI10_IMPORTO_TRIBUTO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="CALCOLO_DIRITTI11_MODALITA_PAGAMENTO" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="TOTALE_DIRITTI_PAGARE" />
+                                                </header>
+                                            </Column>
+                                            <Column width="150px">
+                                                <header>
+                                                    <Text text="TOTALE_GENERALE_PAGARE" />
+                                                </header>
+                                            </Column>
+                                        </columns>
+                                        <items>
+                                            <ColumnListItem>
+                                                <cells>
+                                                    <Input value="{DauSingleItemModel>ID_DOC}" />
+                                                    <Input value="{DauSingleItemModel>REGIME}" />
+                                                    <Input value="{DauSingleItemModel>CODICE_MERCI}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER1_NRO_COLLI}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER2_NRO}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER3_SIGLA}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER4_INDICAZIONE_SCARICO}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER5_DESCRIZIONE_MERCE}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER6_NUMERI_IMBALLAGIO}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER7_TIPO_IMBALLAGIO}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER8_NRO_PEZZI}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER9_CODICE_MERCE_SENSIBILE}" />
+                                                    <Input value="{DauSingleItemModel>CONTAINER10_QUANTITA_MERCE_SENSIBILE}" />
+                                                    <Input value="{DauSingleItemModel>ARTICOLO}" />
+                                                    <Input value="{DauSingleItemModel>PROVINCIA_MERCE}" />
+                                                    <Input value="{DauSingleItemModel>MASSA_LORDA}" />
+                                                    <Input value="{DauSingleItemModel>PREFERENCE}" />
+                                                    <Input value="{DauSingleItemModel>MASSA_NETTA}" />
+                                                    <Input value="{DauSingleItemModel>CONTINGENTI1_NRO_DECHIARATO}" />
+                                                    <Input value="{DauSingleItemModel>CONTINGENTI2_IDENTIFICATI}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE1_TIPO}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE2_NATURA}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE3_REGISTRO_DOC_SCORTA}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE4_NRO_REGISTRAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE6_DATA_DOC_SCORTA}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE10_ID_MRN}" />
+                                                    <Input value="{DauSingleItemModel>DOC_PRECEDENTE11_INF_COMPLEMENTARI}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_SUPPLEMENTARI}" />
+                                                    <Input value="{DauSingleItemModel>PREZZO_ARTICOLO_EUR}" />
+                                                    <Input value="{DauSingleItemModel>METODO_VALUTAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>MENZIONI_SPECIALI1_PRIMO_TIN}" />
+                                                    <Input value="{DauSingleItemModel>MENZIONI_SPECIALI2_SECONDO_TIN}" />
+                                                    <Input value="{DauSingleItemModel>MENZIONI_SPECIALI3_IMPORTO_FATTURA}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI15_NRO_DICHIARATO}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI16_TIPO_DOC}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI17_PAESE_EMISSIONE}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI18_ANNO_EMISSIONE}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI19_ID_DOC}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI20_QUANTITA_DOC}" />
+                                                    <Input value="{DauSingleItemModel>CERTIFICATI21_UNITA_MISURA_DOC}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA24_NRO_DICHIARATO}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA25_MISURA_LIQUIDAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA26_QUANTITA_LIQUIDAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA27_QUALIFICATORE_LIQUIDAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE}" />
+                                                    <Input value="{DauSingleItemModel>UNITA_MISURA30_PREZZO_ENTRATA}" />
+                                                    <Input value="{DauSingleItemModel>VALORE_STATISTICO}" />
+                                                    <Input value="{DauSingleItemModel>MENZIONI_SPECIALI1_ESPORTAZIONE_CE}" />
+                                                    <Input value="{DauSingleItemModel>MENZIONI_SPECIALI2_ESPORTAZIONE_PAESE}" />
+                                                    <Input value="{DauSingleItemModel>CALCOLO_DIRITTI_NRO_DICHIARATO}" />
+                                                    <Input value="{DauSingleItemModel>CALCOLO_DIRITTI1_CODICE_TRIBUTO}" />
+                                                    <Input value="{DauSingleItemModel>CALCOLO_DIRITTI2_BASE_IMPONIBILE}" />
+                                                    <Input value="{DauSingleItemModel>CALCOLO_DIRITTI10_IMPORTO_TRIBUTO}" />
+                                                    <Input value="{DauSingleItemModel>CALCOLO_DIRITTI11_MODALITA_PAGAMENTO}" />
+                                                    <Input value="{DauSingleItemModel>TOTALE_DIRITTI_PAGARE}" />
+                                                    <Input value="{DauSingleItemModel>TOTALE_GENERALE_PAGARE}" />
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </ScrollContainer>
+
+                            </VBox>
                             <!-- 
                             <form:SimpleForm editable="true" layout="ColumnLayout" title="Posizione" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false">
                                 <Input value="{DauSingleItemModel>/0/ID_DOC}" />

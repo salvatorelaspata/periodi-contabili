@@ -309,7 +309,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.DOC_PRECEDENTE6_DATA_DOC_SCORTA, "n8") +
         this._psD("", "an..2") +
         this._psD("", "an8") +
-        this._psD("", "n..3") + //Singolo di riferimento del precedente allibramento
+        this._psD("", "n..3") + // Singolo di riferimento del precedente allibramento
         this._psD(e.DOC_PRECEDENTE10_ID_MRN, "an18") +
         this._psD(e.DOC_PRECEDENTE11_INF_COMPLEMENTARI, "an..500") +
         this._psD(e.UNITA_SUPPLEMENTARI, "n..16,5") +
@@ -416,20 +416,23 @@ sap.ui.define(["./generateTxt"], function () {
           return string.toString().padEnd(length);
         case "n": // numerico
           if (decimal) {
-            if (sign)
+            if (sign) {
               // da gestire in base ai dati reali
+              const v = string.toString().split(",")[0].substring(1);
+              const sign = string.toString().split(",")[0].substring(0, 1);
               return (
-                "±" +
+                sign +
+                v.padStart(length, "0") +
+                "," +
+                string.toString().split(",")[1].padStart(decimal, "0")
+              );
+            } else {
+              return (
                 string.toString().split(",")[0].padStart(length, "0") +
                 "," +
                 string.toString().split(",")[1].padStart(decimal, "0")
               );
-            else
-              return (
-                string.toString().split(",")[0].padStart(length, "0") +
-                "," +
-                string.toString().split(",")[1].padStart(decimal, "0")
-              );
+            }
           } else {
             return string.toString().padStart(length, "0");
           }

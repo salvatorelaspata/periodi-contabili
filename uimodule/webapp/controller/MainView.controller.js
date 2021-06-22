@@ -14,22 +14,24 @@ sap.ui.define(
         const txtPosizioni = this.getOwnerComponent()
           .getModel("txtPosizioni")
           .getData();
+        /** TXT */
         generateTxt.createIM(null, txtHeader, txtPosizioni);
       },
       onInit: function () {
         const oView = this.getView();
         /** TXT - Start */
-        // const emptyModel = new sap.ui.model.json.JSONModel();
-        // prepopolo i valori del form
         const txtHeader = this.getOwnerComponent().getModel("txtHeader");
         const txtPosizioni = this.getOwnerComponent().getModel("txtPosizioni");
         oView.setModel(txtHeader, "DauHeader");
         oView.setModel(txtPosizioni, "DauSingleItemModel");
         /** TXT - End */
+        /** PERIODI CONTABILI - Start */
         const oModel = this.getOwnerComponent().getModel("TreeTable");
         oView.setModel(oModel, "TreeTable");
-        const periodiContabili = this._parsePeriodiContabili(oModel.getData());
 
+        let periodiContabili = this._parsePeriodiContabili(oModel.getData());
+        periodiContabili = this._groupBy(periodiContabili);
+        /** Calcolo Totali (ultima tabella) */
         const objMaterial = {};
         let totale = 0;
         oModel.getData().RegisterCollection.map((a) => {
@@ -104,6 +106,54 @@ sap.ui.define(
             items: periodiContabiliTable,
           })
         );
+        /** PERIODI CONTABILI - End */
+      },
+      _groupBy: function (periodiContabili) {
+        function groupBy(a, keyFunction) {
+          const groups = {};
+          a.forEach(function (el) {
+            const key = keyFunction(el);
+            if (key in groups === false) {
+              groups[key] = [];
+            }
+            groups[key].push(el);
+          });
+          return groups;
+        }
+
+        for (const [year, array] of Object.entries(periodiContabili)) {
+          var helper = {};
+          periodiContabili[year] = array.reduce(function (r, o) {
+            var key = o.subjectCode + "-" + o.doganeItem;
+
+            if (!helper[key]) {
+              helper[key] = Object.assign({}, o); // create a copy of o
+              r.push(helper[key]);
+            } else {
+              helper[key].pieces += o.pieces;
+              helper[key].netWeight += o.netWeight;
+              helper[key].grossWeight += o.grossWeight;
+            }
+
+            return r;
+          }, []);
+
+          //   const bySubjectCode = groupBy(array, (ar) => ar["subjectCode"]);
+          //   const byDoganeItem = groupBy(array, (arr) => arr["doganeItem"]);
+          //   const output = Object.keys(bySubjectCode).map((subjectCode) => {
+          //     const byZone = groupBy(bySubjectCode[subjectCode], (it) => it.Zone);
+          //     const sum = bySubjectCode[subjectCode].reduce(
+          //       (acc, it) => parseInt(acc) + parseInt(it.pieces),
+          //       0
+          //     );
+          //     return {
+          //       "Version Name": name,
+          //       ZoneCount: Object.keys(byZone).length,
+          //       ValueSum: sum,
+          //     };
+          //   });
+        }
+        return periodiContabili;
       },
       _parsePeriodiContabili: function (oData) {
         const data = oData.RegisterCollection;

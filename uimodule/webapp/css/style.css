@@ -2,3 +2,7 @@
 .bold {
   font-weight: bold !important;
 }
+
+.table {
+  margin-top: 50px;
+}

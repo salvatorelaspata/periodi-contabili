@@ -39,8 +39,8 @@ sap.ui.define(
         { label: "Voce doganale", property: "doganeItem" },
         { label: "Pezzi", property: "pieces" },
         { label: "Peso lordo", property: "grossWeight" },
-        { label: "peso Netto (Kg)", property: "netWeight" },
-        { label: "value", property: "value" },
+        { label: "Peso Netto (Kg)", property: "netWeight" },
+        { label: "Periodo", property: "date" },
       ],
       treeTableCols: [
         { label: "nro", property: "nro" },

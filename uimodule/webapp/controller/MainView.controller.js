@@ -31,7 +31,7 @@ sap.ui.define(
 
         let periodiContabili = this._parsePeriodiContabili(oModel.getData());
         periodiContabili = this._groupBy(periodiContabili);
-        /** Calcolo Totali (ultima tabella) */
+        /** TABELLA TOTALI - Start */
         const objMaterial = {};
         let totale = 0;
         oModel.getData().RegisterCollection.map((a) => {
@@ -44,24 +44,26 @@ sap.ui.define(
             totale += parseFloat(a.pieces);
           }
         });
+
         let oDataTotal = [];
         for (const [material, count] of Object.entries(objMaterial)) {
           oDataTotal.push({
-            label: "di cui",
-            totale: count,
-            materiale: material,
+            subjectCode: "di cui",
+            pieces: count,
+            doganeItem: material,
           });
         }
         oDataTotal.unshift({
-          label: "Totale",
-          totale: totale,
-          materiale: "",
+          subjectCode: "Totale",
+          pieces: totale,
+          doganeItem: "",
         });
 
         const oModelTotal = new sap.ui.model.json.JSONModel(oDataTotal);
         oView.setModel(oModelTotal, "totalPeriodiContabili");
+        /** TABELLA TOTALI - End */
 
-        //ciclo ogni anno per calcolare il sub totale
+        /** SUBTOTALI - Start */
         for (const [year, array] of Object.entries(periodiContabili)) {
           const grossWeight = array.reduce(
             (a, b) => a + (parseFloat(b["grossWeight"]) || 0),
@@ -83,7 +85,7 @@ sap.ui.define(
             pieces: pieces,
             grossWeight: grossWeight,
             netWeight: netWeight,
-            doganeItem: "Sub Totale",
+            doganeItem: "",
             doganePosition: "",
             valueCurrency: "",
             origin: "",
@@ -91,11 +93,12 @@ sap.ui.define(
             originNotPref: "",
             transDocIntroIM7: "",
             transDocExtcnIM4: "",
-            subjectCode: "",
+            subjectCode: "Sub Totale",
             stockDocument: "",
           };
           array.push(objToPush);
         }
+        /** SUBTOTALI - End */
 
         const periodiContabiliTable =
           this._createTablePeriodi(periodiContabili);
@@ -109,18 +112,6 @@ sap.ui.define(
         /** PERIODI CONTABILI - End */
       },
       _groupBy: function (periodiContabili) {
-        function groupBy(a, keyFunction) {
-          const groups = {};
-          a.forEach(function (el) {
-            const key = keyFunction(el);
-            if (key in groups === false) {
-              groups[key] = [];
-            }
-            groups[key].push(el);
-          });
-          return groups;
-        }
-
         for (const [year, array] of Object.entries(periodiContabili)) {
           var helper = {};
           periodiContabili[year] = array.reduce(function (r, o) {
@@ -137,21 +128,6 @@ sap.ui.define(
 
             return r;
           }, []);
-
-          //   const bySubjectCode = groupBy(array, (ar) => ar["subjectCode"]);
-          //   const byDoganeItem = groupBy(array, (arr) => arr["doganeItem"]);
-          //   const output = Object.keys(bySubjectCode).map((subjectCode) => {
-          //     const byZone = groupBy(bySubjectCode[subjectCode], (it) => it.Zone);
-          //     const sum = bySubjectCode[subjectCode].reduce(
-          //       (acc, it) => parseInt(acc) + parseInt(it.pieces),
-          //       0
-          //     );
-          //     return {
-          //       "Version Name": name,
-          //       ZoneCount: Object.keys(byZone).length,
-          //       ValueSum: sum,
-          //     };
-          //   });
         }
         return periodiContabili;
       },
@@ -163,7 +139,7 @@ sap.ui.define(
           //if (a.date < b.date) {
           if (a.date.split("/")[2] < b.date.split("/")[2]) {
             return -1;
-          } else if (a.date > b.date) {
+          } else if (a.date.split("/")[2] > b.date.split("/")[2]) {
             return 1;
           } else {
             return 0;
@@ -229,23 +205,11 @@ sap.ui.define(
           }),
         });
       },
-      onExport: function () {
+      onExport: function (oEvent) {
         //recupero i dati
         var TreeTable = this.getOwnerComponent()
           .getModel("TreeTable")
           .getData();
-        var TotaleQuantita1 = this.getOwnerComponent()
-          .getModel("TotaleQuantita1")
-          .getData();
-        var TotaleQuantita2 = this.getOwnerComponent()
-          .getModel("TotaleQuantita2")
-          .getData();
-
-        //effettuo il merge dei totali
-        const totale = TotaleQuantita1.doganeItem.concat(
-          { subjectCode: "Antani come se non ci fosse un domani xD" },
-          TotaleQuantita2.doganeItem
-        );
 
         var oSettings;
 
@@ -255,32 +219,33 @@ sap.ui.define(
           TreeTable.RegisterCollection
         );
         exportXLSX.export(oSettings);
+        debugger;
 
-        var aColsTotaleQuantita = exportXLSX.createColumnConfig(
-          exportXLSX.totaleQntCols
+        const oDynamicVBox = this.getView()
+          .byId("container-periodi-contabili")
+          .getItems()[0]
+          .getItems();
+        let items = [];
+        oDynamicVBox.map(function (table) {
+          items = items.concat(table.getItems());
+        });
+        let array = items.map(function (i) {
+          return i.getBindingContext().getObject();
+        });
+
+        const totalPeriodiContabili = this.getView()
+          .getModel("totalPeriodiContabili")
+          .getData();
+
+        array = array.concat({}, totalPeriodiContabili);
+
+        exportXLSX.export(
+          exportXLSX.createSettings(
+            "Periodi Contabili",
+            exportXLSX.createColumnConfig(exportXLSX.totaleQntCols),
+            array
+          )
         );
-
-        oSettings = exportXLSX.createSettings(
-          "TotaleQuantita1",
-          aColsTotaleQuantita,
-          TotaleQuantita1.doganeItem
-        );
-        exportXLSX.export(oSettings);
-
-        oSettings = exportXLSX.createSettings(
-          "TotaleQuantita2",
-          aColsTotaleQuantita,
-          TotaleQuantita2.doganeItem
-        );
-
-        exportXLSX.export(oSettings);
-
-        oSettings = exportXLSX.createSettings(
-          "Totale",
-          aColsTotaleQuantita,
-          totale
-        );
-        exportXLSX.export(oSettings);
       },
     });
   }

@@ -1,141 +1,145 @@
 <mvc:View controllerName="com.myorg.spreadsheet.controller.MainView" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:table="sap.ui.table" xmlns:core="sap.ui.core" xmlns:form="sap.ui.layout.form">
     <App id="idAppControl">
         <pages>
-            <Page title="title">
+            <Page title="enel.logistincs">
                 <content>
                     <VBox>
-                        <Panel headerText="Tree Table" expandable="true" expanded="false">
-                            <table:TreeTable rows="{TreeTable>/RegisterCollection}">
-                                <table:extension>
-                                    <OverflowToolbar>
-                                        <Title id="title" text="Sample Data"></Title>
-                                        <ToolbarSpacer />
-                                        <Button icon="sap-icon://excel-attachment" press="onExport" tooltip="Export Formatting Example" />
-                                    </OverflowToolbar>
-                                </table:extension>
-                                <table:columns>
-                                    <table:Column>
-                                        <Label design="Bold" text="nro" />
-                                        <table:template>
-                                            <Text text="{TreeTable>nro}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="date" />
-                                        <table:template>
-                                            <Text text="{TreeTable>date}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="pieces" />
-                                        <table:template>
-                                            <Text text="{TreeTable>pieces}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="grossWeight" />
-                                        <table:template>
-                                            <Text text="{TreeTable>grossWeight}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="netWeight" />
-                                        <table:template>
-                                            <Text text="{TreeTable>netWeight}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="doganeItem" />
-                                        <table:template>
-                                            <Text text="{TreeTable>doganeItem}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="doganePosition" />
-                                        <table:template>
-                                            <Text text="{TreeTable>doganePosition}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="valueCurrency" />
-                                        <table:template>
-                                            <Text text="{TreeTable>valueCurrency}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="origin" />
-                                        <table:template>
-                                            <Text text="{TreeTable>origin}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="originPref" />
-                                        <table:template>
-                                            <Text text="{TreeTable>originPref}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="originNotPref" />
-                                        <table:template>
-                                            <Text text="{TreeTable>originNotPref}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="transDocIntroIM7" />
-                                        <table:template>
-                                            <Text text="{TreeTable>transDocIntroIM7}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="transDocExtcnIM4" />
-                                        <table:template>
-                                            <Text text="{TreeTable>transDocExtcnIM4}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="subjectCode" />
-                                        <table:template>
-                                            <Text text="{TreeTable>subjectCode}" />
-                                        </table:template>
-                                    </table:Column>
-                                    <table:Column>
-                                        <Label design="Bold" text="stockDocument" />
-                                        <table:template>
-                                            <Text text="{TreeTable>stockDocument}" />
-                                        </table:template>
-                                    </table:Column>
-                                </table:columns>
-                            </table:TreeTable>
-                        </Panel>
-                        <Panel headerText="Periodi Contabili" expandable="true" expanded="true">
+                        <Panel headerText="Tree Table" expandable="true" expanded="true">
+                            <headerToolbar>
+                                <OverflowToolbar>
+                                    <Title text="Tree Table" />
+                                    <ToolbarSpacer />
+                                    <Button text="Export XLSX" icon="sap-icon://excel-attachment" press="onExport" tooltip="Export Formatting Example" />
+                                </OverflowToolbar>
+                            </headerToolbar>
                             <VBox>
-                                <VBox id="container-periodi-contabili">
-                                    <items></items>
-                                </VBox>
-                                <Table items="{totalPeriodiContabili>/}">
-                                    <columns>
-                                        <Column />
-                                        <Column />
-                                        <Column />
-                                        <Column />
-                                        <Column />
-                                        <Column />
-                                    </columns>
-                                    <items>
-                                        <ColumnListItem>
-                                            <cells>
-                                                <Text text="" />
-                                                <Text text="" />
-                                                <Text class="" text="{totalPeriodiContabili>label}" />
-                                                <Text class="bold" text="{totalPeriodiContabili>totale}" />
-                                                <Text class="bold" text="{totalPeriodiContabili>materiale}" />
-                                                <Text text="" />
-                                            </cells>
-                                        </ColumnListItem>
-                                    </items>
-                                </Table>
+                                <table:TreeTable rows="{TreeTable>/RegisterCollection}" selectionMode="None" alternateRowColors="true" visibleRowCount="12">
+                                    <table:extension />
+                                    <table:columns>
+                                        <table:Column>
+                                            <Label design="Bold" text="nro" />
+                                            <table:template>
+                                                <Text text="{TreeTable>nro}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="date" />
+                                            <table:template>
+                                                <Text text="{TreeTable>date}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="pieces" />
+                                            <table:template>
+                                                <Text text="{TreeTable>pieces}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="grossWeight" />
+                                            <table:template>
+                                                <Text text="{TreeTable>grossWeight}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="netWeight" />
+                                            <table:template>
+                                                <Text text="{TreeTable>netWeight}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="doganeItem" />
+                                            <table:template>
+                                                <Text text="{TreeTable>doganeItem}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="doganePosition" />
+                                            <table:template>
+                                                <Text text="{TreeTable>doganePosition}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="valueCurrency" />
+                                            <table:template>
+                                                <Text text="{TreeTable>valueCurrency}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="origin" />
+                                            <table:template>
+                                                <Text text="{TreeTable>origin}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="originPref" />
+                                            <table:template>
+                                                <Text text="{TreeTable>originPref}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="originNotPref" />
+                                            <table:template>
+                                                <Text text="{TreeTable>originNotPref}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="transDocIntroIM7" />
+                                            <table:template>
+                                                <Text text="{TreeTable>transDocIntroIM7}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="transDocExtcnIM4" />
+                                            <table:template>
+                                                <Text text="{TreeTable>transDocExtcnIM4}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="subjectCode" />
+                                            <table:template>
+                                                <Text text="{TreeTable>subjectCode}" />
+                                            </table:template>
+                                        </table:Column>
+                                        <table:Column>
+                                            <Label design="Bold" text="stockDocument" />
+                                            <table:template>
+                                                <Text text="{TreeTable>stockDocument}" />
+                                            </table:template>
+                                        </table:Column>
+                                    </table:columns>
+                                </table:TreeTable>
+                                <Panel headerText="Periodi Contabili" expandable="true" expanded="false">
+                                    <VBox>
+                                        <VBox id="container-periodi-contabili">
+                                            <items></items>
+                                        </VBox>
+                                        <Table items="{totalPeriodiContabili>/}" class="table">
+                                            <columns>
+                                                <Column />
+                                                <Column />
+                                                <Column />
+                                                <Column />
+                                                <Column />
+                                                <Column />
+                                            </columns>
+                                            <items>
+                                                <ColumnListItem>
+                                                    <cells>
+                                                        <Text class="bold" text="{totalPeriodiContabili>subjectCode}" />
+                                                        <Text class="bold" text="{totalPeriodiContabili>doganeItem}" />
+                                                        <Text class="bold" text="{totalPeriodiContabili>pieces}" />
+                                                        <Text text="" />
+                                                        <Text text="" />
+                                                        <Text text="" />
+                                                    </cells>
+                                                </ColumnListItem>
+                                            </items>
+                                        </Table>
+                                    </VBox>
+                                </Panel>
                             </VBox>
                         </Panel>
+
                         <Panel expandable="true" expanded="false" headerText=".txt FILE">
                             <VBox>
                                 <form:SimpleForm editable="true" layout="ColumnLayout" title="Header" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1" singleContainerFullSize="false">

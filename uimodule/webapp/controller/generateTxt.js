@@ -127,14 +127,14 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.TOTALE_ARTICOLI, "n..5") +
         this._psD(e.TOTALE_COLLI, "n..7") +
         // Speditore/Esportatore
-        this._psD(e.SPEDITORE1_PAESE_CF, "a2") +
+        this._psD(e.SPEDITORE1_PAESE_CF, "a2") + // 2.1
         this._psD(e.SPEDITORE2_CODICE_FISCALE, "an..16") +
         this._psD(e.SPEDITORE3_RAGIONE_SOCIALE, "an..35") +
         this._psD(e.SPEDITORE4_INDIRIZZO, "an..35") +
         this._psD(e.SPEDITORE5_CAP, "an..9") +
         this._psD(e.SPEDITORE6_CITTA, "an..35") +
         this._psD(e.SPEDITORE7_PAESE, "a2") +
-        this._psD(e.SPEDITORE8_NUMERO_RIFERIEMENTO, "an..22") +
+        this._psD(e.NUMERO_RIFERIEMENTO, "an..22") +
         // Destinatario
         this._psD(e.DESTINATARIO1_PAESE_CF, "a2") +
         this._psD(e.DESTINATARIO2_CODICE_FISCALE, "an..16") +
@@ -143,7 +143,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.DESTINATARIO5_CAP, "an..9") +
         this._psD(e.DESTINATARIO6_CITTA, "an..35") +
         this._psD(e.DESTINATARIO7_PAESE, "a2") +
-        this._psD(e.DESTINATARIO8_SPESE_CONSEGNA, "n..±14,2") +
+        this._psD(e.SPESE_CONSEGNA, "n..±14,2") +
         // Dichiarante/Rappresentante
         this._psD(e.DICHIARANTE1_REPPRESENTANZA, "n1") +
         this._psD(e.DICHIARANTE2_CODICE_PAESE, "a2") +
@@ -153,14 +153,14 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.DICHIARANTE6_CAP, "an..9") +
         this._psD(e.DICHIARANTE7_CITTA, "an..35") +
         this._psD(e.DICHIARANTE8_PAESE, "a2") +
-        this._psD(e.DICHIARANTE9_CODICE_PAESE_SPEDIZIONE, "a2") +
+        this._psD(e.CODICE_PAESE_SPEDIZIONE, "a2") +
         // Paese di destinazione
         this._psD(e.PAESE_DESTINAZIONE1_CODICE_PAESE, "a2") +
         this._psD(e.PAESE_DESTINAZIONE2_PROVINCIA, "a2") +
         // Mezzo trasporto all'arrivo
         this._psD(e.MEZZO_TRASPORTO1_NAZIONALITA, "a2") +
         this._psD(e.MEZZO_TRASPORTO2_IDENTITA, "an..27") +
-        this._psD(e.MEZZO_TRASPORTO19_TRASPORTO_CONTAINER, "n1") +
+        this._psD(e.TRASPORTO_CONTAINER, "n1") +
         // Termini di consegna
         this._psD(e.TERMINI_CONSEGNA1_CONDIZIONI, "a3") +
         this._psD(e.TERMINI_CONSEGNA2_LUOGO_CONVENUTO, "an..35") +
@@ -171,8 +171,8 @@ sap.ui.define(["./generateTxt"], function () {
         // Dati della transazione
         this._psD(e.TRANSAZIONE1_VALUTA, "an..3") +
         this._psD(e.TRANSAZIONE2_TOTALE_FATTURATO, "n..17,2") +
-        this._psD(e.TRANSAZIONE23_TASSO_CAMBIO, "n..11,5") +
-        this._psD(e.TRANSAZIONE24_CODICE_TRANSAZIONE, "n..2") +
+        this._psD(e.TASSO_CAMBIO, "n..11,5") +
+        this._psD(e.CODICE_TRANSAZIONE, "n..2") +
         this._psD(e.MODO_TRANSPORTO_FRONTIERA, "n..2") +
         this._psD(e.MODO_TRANSPORTO_INTERNO, "n..2") +
         this._psD(e.LUOGO_CARICO, "an..17") +
@@ -181,19 +181,19 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.UFFICIO_ENTRATA2_CODICE, "n6") +
         this._psD(e.UFFICIO_ENTRATA3_DENOMINAZIONE, "an..30") +
         // Localizzazione delle merci
-        this._psD(e.LOCAZZIONE_MERCI1_LUOGO_VISITA, "an..17") +
-        this._psD(e.LOCAZZIONE_MERCI2_LUOGO_SCARICO, "an..17") +
+        this._psD(e.LOCAZIONE_MERCI1_LUOGO_VISITA, "an..17") +
+        this._psD(e.LOCAZIONE_MERCI2_LUOGO_SCARICO, "an..17") +
         // Pagamento differito
         this._psD(e.PAGAMENTO_DIFFERITO1_NUMERO_CONTO, "n..6") +
         this._psD(e.PAGAMENTO_DIFFERITO2_CIN_CONTO, "a1") +
         //Identificativo del Magazzino
-        this._psD(e.MAGAZZIONO1_ACCERTAMENTO, "a1") +
-        this._psD(e.MAGAZZIONO2_TIPO_DEPOSITO, "a1") +
-        this._psD(e.MAGAZZIONO3_ID_DEPOSITO, "an..14") +
-        this._psD(e.MAGAZZIONO4_CIN_ID_DEPOSITO, "a1") +
-        this._psD(e.MAGAZZIONO5_CODICE_PAESE, "a2") +
-        this._psD(e.MAGAZZIONO6_UFFICIO_CONTROLLO, "an..8") +
-        this._psD(e.MAGAZZIONO7_DATA_LIMITE_TEMPORANEA, "n8") +
+        this._psD(e.MAGAZZINO1_ACCERTAMENTO, "a1") +
+        this._psD(e.MAGAZZINO2_TIPO_DEPOSITO, "a1") +
+        this._psD(e.MAGAZZINO3_ID_DEPOSITO, "an..14") +
+        this._psD(e.MAGAZZINO4_CIN_ID_DEPOSITO, "a1") +
+        this._psD(e.MAGAZZINO5_CODICE_PAESE, "a2") +
+        this._psD(e.MAGAZZINO6_UFFICIO_CONTROLLO, "an..8") +
+        this._psD(e.DATA_LIMITE_TEMPORANEA, "n8") +
         // Obbligato principale
         this._psD(e.OBBLIGATO_PRINCIPALE1_PAESE_CF, "a2") +
         this._psD(e.OBBLIGATO_PRINCIPALE2_CODICE_FISCALE, "an..16") +
@@ -206,8 +206,8 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.OBBLIGATO_PRINCIPALE8_REPPRESENTANTE, "an..35") +
         this._psD(e.OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE, "an..35") +
         // Uffici di passaggio
-        this._psD(e.UFFICIO_PASSAGIO1_NRO, "n..2") +
-        this._psD(e.UFFICIO_PASSAGIO2_UFFICI, "an8") +
+        this._psD(e.UFFICIO_PASSAGGIO1_NRO, "n..2") +
+        this._psD(e.UFFICIO_PASSAGGIO2_UFFICI, "an8") +
         // Garanzia
         this._psD(e.GARANZIA1_NRO, "n..2") +
         this._psD(e.GARANZIA2_TIPO, "an1") +
@@ -221,7 +221,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.GARANZIA8_NON_VALIDA_EU, "a2") +
         // Limitazione di validità (paesi extra EU)
         this._psD(e.GARANZIA9_NON_VALIDA_EXTRA_EU, "a2") +
-        this._psD(e.GARANZIA9_NON_VALIDA_EXTRA_EU, "a2") +
+        this._psD(e.GARANZIA10_NON_VALIDA_EXTRA_EU, "a2") +
         // Ufficio di destinazione
         this._psD(e.UFFICIO_DESTINAZIONE1_NAME, "an8") +
         this._psD(e.UFFICIO_DESTINAZIONE2_CF_DEST_AUTORIZZATO, "an..16") +
@@ -270,7 +270,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(t.DESTINATARIO6_CITTA, "an..35") +
         this._psD(t.DESTINATARIO7_PAESE, "a2") +
         this._psD(t.SPEDITORE7_PAESE, "a2") +
-        this._psD(t.DICHIARANTE9_CODICE_PAESE_SPEDIZIONE, "a2") +
+        this._psD(t.CODICE_PAESE_SPEDIZIONE, "a2") +
         // Imballaggi
         this._psD(e.CONTAINER1_NRO_COLLI, "n..7") +
         // Container
@@ -309,7 +309,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.DOC_PRECEDENTE6_DATA_DOC_SCORTA, "n8") +
         this._psD("", "an..2") +
         this._psD("", "an8") +
-        this._psD("", "n..3") + // Singolo di riferimento del precedente allibramento
+        this._psD(e.DOC_PRECEDENTE9_SINGOLO_RIFERIMENTO, "n..3") + // Singolo di riferimento del precedente allibramento
         this._psD(e.DOC_PRECEDENTE10_ID_MRN, "an18") +
         this._psD(e.DOC_PRECEDENTE11_INF_COMPLEMENTARI, "an..500") +
         this._psD(e.UNITA_SUPPLEMENTARI, "n..16,5") +
@@ -346,7 +346,7 @@ sap.ui.define(["./generateTxt"], function () {
         this._psD(e.UNITA_MISURA27_QUALIFICATORE_LIQUIDAZIONE, "an..5") +
         this._psD(e.UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE, "an..5") +
         this._psD(e.UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE, "n..14,5") +
-        this._psD(e.UNITA_MISURA30_PREZZO_ENTRATA, "n..16,2") +
+        this._psD(e.PREZZO_ENTRATA, "n..16,2") +
         this._psD("", "an..500") +
         this._psD("00,00", "n..±14,2") +
         this._psD(e.VALORE_STATISTICO, "n..17,2") +

@@ -175,8 +175,8 @@
                                     <Input value="{DauHeader>/SPEDITORE6_CITTA}" />
                                     <Label design="Bold" text="SPEDITORE7_PAESE" />
                                     <Input value="{DauHeader>/SPEDITORE7_PAESE}" />
-                                    <Label design="Bold" text="SPEDITORE8_NUMERO_RIFERIEMENTO" />
-                                    <Input value="{DauHeader>/SPEDITORE8_NUMERO_RIFERIEMENTO}" />
+                                    <Label design="Bold" text="NUMERO_RIFERIEMENTO" />
+                                    <Input value="{DauHeader>/NUMERO_RIFERIEMENTO}" />
                                     <Label design="Bold" text="DESTINATARIO1_PAESE_CF" />
                                     <Input value="{DauHeader>/DESTINATARIO1_PAESE_CF}" />
                                     <Label design="Bold" text="DESTINATARIO2_CODICE_FISCALE" />
@@ -191,8 +191,8 @@
                                     <Input value="{DauHeader>/DESTINATARIO6_CITTA}" />
                                     <Label design="Bold" text="DESTINATARIO7_PAESE" />
                                     <Input value="{DauHeader>/DESTINATARIO7_PAESE}" />
-                                    <Label design="Bold" text="DESTINATARIO8_SPESE_CONSEGNA" />
-                                    <Input value="{DauHeader>/DESTINATARIO8_SPESE_CONSEGNA}" />
+                                    <Label design="Bold" text="SPESE_CONSEGNA" />
+                                    <Input value="{DauHeader>/SPESE_CONSEGNA}" />
                                     <Label design="Bold" text="DICHIARANTE1_REPPRESENTANZA" />
                                     <Input value="{DauHeader>/DICHIARANTE1_REPPRESENTANZA}" />
                                     <Label design="Bold" text="DICHIARANTE2_CODICE_PAESE" />
@@ -209,8 +209,8 @@
                                     <Input value="{DauHeader>/DICHIARANTE7_CITTA}" />
                                     <Label design="Bold" text="DICHIARANTE8_PAESE" />
                                     <Input value="{DauHeader>/DICHIARANTE8_PAESE}" />
-                                    <Label design="Bold" text="DICHIARANTE9_CODICE_PAESE_SPEDIZIONE" />
-                                    <Input value="{DauHeader>/DICHIARANTE9_CODICE_PAESE_SPEDIZIONE}" />
+                                    <Label design="Bold" text="CODICE_PAESE_SPEDIZIONE" />
+                                    <Input value="{DauHeader>/CODICE_PAESE_SPEDIZIONE}" />
                                     <Label design="Bold" text="PAESE_DESTINAZIONE1_CODICE_PAESE" />
                                     <Input value="{DauHeader>/PAESE_DESTINAZIONE1_CODICE_PAESE}" />
                                     <Label design="Bold" text="PAESE_DESTINAZIONE2_PROVINCIA" />
@@ -219,8 +219,8 @@
                                     <Input value="{DauHeader>/MEZZO_TRASPORTO1_NAZIONALITA}" />
                                     <Label design="Bold" text="MEZZO_TRASPORTO2_IDENTITA" />
                                     <Input value="{DauHeader>/MEZZO_TRASPORTO2_IDENTITA}" />
-                                    <Label design="Bold" text="MEZZO_TRASPORTO19_TRASPORTO_CONTAINER" />
-                                    <Input value="{DauHeader>/MEZZO_TRASPORTO19_TRASPORTO_CONTAINER}" />
+                                    <Label design="Bold" text="TRASPORTO_CONTAINER" />
+                                    <Input value="{DauHeader>/TRASPORTO_CONTAINER}" />
                                     <Label design="Bold" text="TERMINI_CONSEGNA1_CONDIZIONI" />
                                     <Input value="{DauHeader>/TERMINI_CONSEGNA1_CONDIZIONI}" />
                                     <Label design="Bold" text="TERMINI_CONSEGNA2_LUOGO_CONVENUTO" />
@@ -235,10 +235,10 @@
                                     <Input value="{DauHeader>/TRANSAZIONE1_VALUTA}" />
                                     <Label design="Bold" text="TRANSAZIONE2_TOTALE_FATTURATO" />
                                     <Input value="{DauHeader>/TRANSAZIONE2_TOTALE_FATTURATO}" />
-                                    <Label design="Bold" text="TRANSAZIONE23_TASSO_CAMBIO" />
-                                    <Input value="{DauHeader>/TRANSAZIONE23_TASSO_CAMBIO}" />
-                                    <Label design="Bold" text="TRANSAZIONE24_CODICE_TRANSAZIONE" />
-                                    <Input value="{DauHeader>/TRANSAZIONE24_CODICE_TRANSAZIONE}" />
+                                    <Label design="Bold" text="TASSO_CAMBIO" />
+                                    <Input value="{DauHeader>/TASSO_CAMBIO}" />
+                                    <Label design="Bold" text="CODICE_TRANSAZIONE" />
+                                    <Input value="{DauHeader>/CODICE_TRANSAZIONE}" />
                                     <Label design="Bold" text="MODO_TRANSPORTO_FRONTIERA" />
                                     <Input value="{DauHeader>/MODO_TRANSPORTO_FRONTIERA}" />
                                     <Label design="Bold" text="MODO_TRANSPORTO_INTERNO" />
@@ -251,28 +251,28 @@
                                     <Input value="{DauHeader>/UFFICIO_ENTRATA2_CODICE}" />
                                     <Label design="Bold" text="UFFICIO_ENTRATA3_DENOMINAZIONE" />
                                     <Input value="{DauHeader>/UFFICIO_ENTRATA3_DENOMINAZIONE}" />
-                                    <Label design="Bold" text="LOCAZZIONE_MERCI1_LUOGO_VISITA" />
-                                    <Input value="{DauHeader>/LOCAZZIONE_MERCI1_LUOGO_VISITA}" />
-                                    <Label design="Bold" text="LOCAZZIONE_MERCI2_LUOGO_SCARICO" />
-                                    <Input value="{DauHeader>/LOCAZZIONE_MERCI2_LUOGO_SCARICO}" />
+                                    <Label design="Bold" text="LOCAZIONE_MERCI1_LUOGO_VISITA" />
+                                    <Input value="{DauHeader>/LOCAZIONE_MERCI1_LUOGO_VISITA}" />
+                                    <Label design="Bold" text="LOCAZIONE_MERCI2_LUOGO_SCARICO" />
+                                    <Input value="{DauHeader>/LOCAZIONE_MERCI2_LUOGO_SCARICO}" />
                                     <Label design="Bold" text="PAGAMENTO_DIFFERITO1_NUMERO_CONTO" />
                                     <Input value="{DauHeader>/PAGAMENTO_DIFFERITO1_NUMERO_CONTO}" />
                                     <Label design="Bold" text="PAGAMENTO_DIFFERITO2_CIN_CONTO" />
                                     <Input value="{DauHeader>/PAGAMENTO_DIFFERITO2_CIN_CONTO}" />
-                                    <Label design="Bold" text="MAGAZZIONO1_ACCERTAMENTO" />
-                                    <Input value="{DauHeader>/MAGAZZIONO1_ACCERTAMENTO}" />
-                                    <Label design="Bold" text="MAGAZZIONO2_TIPO_DEPOSITO" />
-                                    <Input value="{DauHeader>/MAGAZZIONO2_TIPO_DEPOSITO}" />
-                                    <Label design="Bold" text="MAGAZZIONO3_ID_DEPOSITO" />
-                                    <Input value="{DauHeader>/MAGAZZIONO3_ID_DEPOSITO}" />
-                                    <Label design="Bold" text="MAGAZZIONO4_CIN_ID_DEPOSITO" />
-                                    <Input value="{DauHeader>/MAGAZZIONO4_CIN_ID_DEPOSITO}" />
-                                    <Label design="Bold" text="MAGAZZIONO5_CODICE_PAESE" />
-                                    <Input value="{DauHeader>/MAGAZZIONO5_CODICE_PAESE}" />
-                                    <Label design="Bold" text="MAGAZZIONO6_UFFICIO_CONTROLLO" />
-                                    <Input value="{DauHeader>/MAGAZZIONO6_UFFICIO_CONTROLLO}" />
-                                    <Label design="Bold" text="MAGAZZIONO7_DATA_LIMITE_TEMPORANEA" />
-                                    <Input value="{DauHeader>/MAGAZZIONO7_DATA_LIMITE_TEMPORANEA}" />
+                                    <Label design="Bold" text="MAGAZZINO1_ACCERTAMENTO" />
+                                    <Input value="{DauHeader>/MAGAZZINO1_ACCERTAMENTO}" />
+                                    <Label design="Bold" text="MAGAZZINO2_TIPO_DEPOSITO" />
+                                    <Input value="{DauHeader>/MAGAZZINO2_TIPO_DEPOSITO}" />
+                                    <Label design="Bold" text="MAGAZZINO3_ID_DEPOSITO" />
+                                    <Input value="{DauHeader>/MAGAZZINO3_ID_DEPOSITO}" />
+                                    <Label design="Bold" text="MAGAZZINO4_CIN_ID_DEPOSITO" />
+                                    <Input value="{DauHeader>/MAGAZZINO4_CIN_ID_DEPOSITO}" />
+                                    <Label design="Bold" text="MAGAZZINO5_CODICE_PAESE" />
+                                    <Input value="{DauHeader>/MAGAZZINO5_CODICE_PAESE}" />
+                                    <Label design="Bold" text="MAGAZZINO6_UFFICIO_CONTROLLO" />
+                                    <Input value="{DauHeader>/MAGAZZINO6_UFFICIO_CONTROLLO}" />
+                                    <Label design="Bold" text="DATA_LIMITE_TEMPORANEA" />
+                                    <Input value="{DauHeader>/DATA_LIMITE_TEMPORANEA}" />
                                     <Label design="Bold" text="OBBLIGATO_PRINCIPALE1_PAESE_CF" />
                                     <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE1_PAESE_CF}" />
                                     <Label design="Bold" text="OBBLIGATO_PRINCIPALE2_CODICE_FISCALE" />
@@ -291,10 +291,10 @@
                                     <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE8_REPPRESENTANTE}" />
                                     <Label design="Bold" text="OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE" />
                                     <Input value="{DauHeader>/OBBLIGATO_PRINCIPALE9_TIPO_REPRESENTANTE}" />
-                                    <Label design="Bold" text="UFFICIO_PASSAGIO1_NRO" />
-                                    <Input value="{DauHeader>/UFFICIO_PASSAGIO1_NRO}" />
-                                    <Label design="Bold" text="UFFICIO_PASSAGIO2_UFFICI" />
-                                    <Input value="{DauHeader>/UFFICIO_PASSAGIO2_UFFICI}" />
+                                    <Label design="Bold" text="UFFICIO_PASSAGGIO1_NRO" />
+                                    <Input value="{DauHeader>/UFFICIO_PASSAGGIO1_NRO}" />
+                                    <Label design="Bold" text="UFFICIO_PASSAGGIO2_UFFICI" />
+                                    <Input value="{DauHeader>/UFFICIO_PASSAGGIO2_UFFICI}" />
                                     <Label design="Bold" text="GARANZIA1_NRO" />
                                     <Input value="{DauHeader>/GARANZIA1_NRO}" />
                                     <Label design="Bold" text="GARANZIA2_TIPO" />
@@ -313,6 +313,8 @@
                                     <Input value="{DauHeader>/GARANZIA8_NON_VALIDA_EU}" />
                                     <Label design="Bold" text="GARANZIA9_NON_VALIDA_EXTRA_EU" />
                                     <Input value="{DauHeader>/GARANZIA9_NON_VALIDA_EXTRA_EU}" />
+                                    <Label design="Bold" text="GARANZIA10_NON_VALIDA_EXTRA_EU" />
+                                    <Input value="{DauHeader>/GARANZIA10_NON_VALIDA_EXTRA_EU}" />
                                     <Label design="Bold" text="UFFICIO_DESTINAZIONE1_NAME" />
                                     <Input value="{DauHeader>/UFFICIO_DESTINAZIONE1_NAME}" />
                                     <Label design="Bold" text="UFFICIO_DESTINAZIONE2_CF_DEST_AUTORIZZATO" />
@@ -397,11 +399,6 @@
                                             <Column width="150px">
                                                 <header>
                                                     <Text text="ARTICOLO" />
-                                                </header>
-                                            </Column>
-                                            <Column width="150px">
-                                                <header>
-                                                    <Text text="PROVINCIA_MERCE" />
                                                 </header>
                                             </Column>
                                             <Column width="150px">
@@ -561,7 +558,7 @@
                                             </Column>
                                             <Column width="150px">
                                                 <header>
-                                                    <Text text="UNITA_MISURA30_PREZZO_ENTRATA" />
+                                                    <Text text="PREZZO_ENTRATA" />
                                                 </header>
                                             </Column>
                                             <Column width="150px">
@@ -632,7 +629,6 @@
                                                     <Input value="{DauSingleItemModel>CONTAINER9_CODICE_MERCE_SENSIBILE}" />
                                                     <Input value="{DauSingleItemModel>CONTAINER10_QUANTITA_MERCE_SENSIBILE}" />
                                                     <Input value="{DauSingleItemModel>ARTICOLO}" />
-                                                    <Input value="{DauSingleItemModel>PROVINCIA_MERCE}" />
                                                     <Input value="{DauSingleItemModel>MASSA_LORDA}" />
                                                     <Input value="{DauSingleItemModel>PREFERENCE}" />
                                                     <Input value="{DauSingleItemModel>MASSA_NETTA}" />
@@ -664,7 +660,7 @@
                                                     <Input value="{DauSingleItemModel>UNITA_MISURA27_QUALIFICATORE_LIQUIDAZIONE}" />
                                                     <Input value="{DauSingleItemModel>UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE}" />
                                                     <Input value="{DauSingleItemModel>UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE}" />
-                                                    <Input value="{DauSingleItemModel>UNITA_MISURA30_PREZZO_ENTRATA}" />
+                                                    <Input value="{DauSingleItemModel>PREZZO_ENTRATA}" />
                                                     <Input value="{DauSingleItemModel>VALORE_STATISTICO}" />
                                                     <Input value="{DauSingleItemModel>MENZIONI_SPECIALI1_ESPORTAZIONE_CE}" />
                                                     <Input value="{DauSingleItemModel>MENZIONI_SPECIALI2_ESPORTAZIONE_PAESE}" />
@@ -712,8 +708,6 @@
                                 <Label text="/0/CONTAINER10_QUANTITA_MERCE_SENSIBILE" />
                                 <Input value="{DauSingleItemModel>/0/ARTICOLO}" />
                                 <Label text="/0/ARTICOLO" />
-                                <Input value="{DauSingleItemModel>/0/PROVINCIA_MERCE}" />
-                                <Label text="/0/PROVINCIA_MERCE" />
                                 <Input value="{DauSingleItemModel>/0/MASSA_LORDA}" />
                                 <Label text="/0/MASSA_LORDA" />
                                 <Input value="{DauSingleItemModel>/0/PREFERENCE}" />
@@ -776,8 +770,8 @@
                                 <Label text="/0/UNITA_MISURA28_ULTERIORE_LIQUIDAZIONE" />
                                 <Input value="{DauSingleItemModel>/0/UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE}" />
                                 <Label text="/0/UNITA_MISURA29_ULTERIORE_QUANTITA_LIQUIDAZIONE" />
-                                <Input value="{DauSingleItemModel>/0/UNITA_MISURA30_PREZZO_ENTRATA}" />
-                                <Label text="/0/UNITA_MISURA30_PREZZO_ENTRATA" />
+                                <Input value="{DauSingleItemModel>/0/PREZZO_ENTRATA}" />
+                                <Label text="/0/PREZZO_ENTRATA" />
                                 <Input value="{DauSingleItemModel>/0/VALORE_STATISTICO}" />
                                 <Label text="/0/VALORE_STATISTICO" />
                                 <Input value="{DauSingleItemModel>/0/MENZIONI_SPECIALI1_ESPORTAZIONE_CE}" />

@@ -28,7 +28,7 @@ sap.ui.define(
         return cols.map((c) => {
           return {
             label: c.label,
-            type: EdmType.String,
+            type: c.type || EdmType.String,
             property: c.property,
             wrap: false,
           };
@@ -37,9 +37,17 @@ sap.ui.define(
       totaleQntCols: [
         { label: "Codice oggetto", property: "subjectCode" },
         { label: "Voce doganale", property: "doganeItem" },
-        { label: "Pezzi", property: "pieces" },
-        { label: "Peso lordo", property: "grossWeight" },
-        { label: "Peso Netto (Kg)", property: "netWeight" },
+        { label: "Pezzi", property: "pieces", type: EdmType.Int16 },
+        {
+          label: "Peso lordo",
+          property: "grossWeight",
+          type: EdmType.Decimal,
+        },
+        {
+          label: "Peso Netto (Kg)",
+          property: "netWeight",
+          type: EdmType.Decimal,
+        },
         { label: "Periodo", property: "date" },
       ],
       treeTableCols: [

@@ -32,6 +32,7 @@ sap.ui.define(
         let periodiContabili = this._parsePeriodiContabili(oModel.getData());
         periodiContabili = this._groupBy(periodiContabili);
         /** TABELLA TOTALI - Start */
+        debugger;
         const objMaterial = {};
         let totale = 0;
         oModel.getData().RegisterCollection.map((a) => {
